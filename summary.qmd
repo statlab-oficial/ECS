@@ -1,7 +1,325 @@
-# Summary
+# Estatística Descritiva
 
-In summary, this book has no content whatsoever.
 
-```{r}
-1 + 1
+## Fases do método estatístico
+
+### Métodos de Pesquisa
+Quando se faz uma pesquisa científica, o procedimento geral é formular hipóteses e testá-las. Inicialmente, essas hipóteses são formuladas em termos científicos dentro da área de estudo. Em seguida, devem ser expressas em termos estatísticos.
+
+#### Método Científico
+
+Conjunto de normas básicas que devem ser seguidas para a produção de conhecimentos que têm o rigor da ciência, ou seja, é um método usado para a pesquisa e comprovação de um determinado conteúdo. Destacamos o **método experimental** e o **método estatístico**.
+.pull-left[
+.content-box-yellow[
+
+**Método Experimental** - Consiste em manter constante todas as causas (fatores), menos uma, e variá-la de modo que o pesquisador possa descobrir seus efeitos, caso existam. É o método preferido no estudo da Física, da Química, etc. (CRESPO, 2002).
+
+]
+]
+.pull-right[
+.content-box-yellow[
+.footnotesize[
+**Método Estatístico** - Método que admite todas as causas presentes variando-as, dada a impossibilidade de manter as causas constantes, registrando essas variações e procurando determinar as influências que cabem a cada uma delas (COSTA, 2011). Exemplo: Quais as causas que definem o preço de uma mercadoria quando a sua oferta diminui?
+]
+]
+]
+
+.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+---
+
+## Fases do método estatístico
+
+As principais fases do método estatístico são: 
+
+1ª) Definição do problema;
+
+2ª) Planejamento;
+
+3ª) Coleta de dados; 
+
+4ª) Apuração dos dados; 
+
+5ª) Apresentação dos dados;
+
+6ª) Análise e interpretação dos dados (CASTANHEIRA, 2003).
+
+.pull-left[
+.content-box-army[
+**Definição do problema** - Saber exatamente aquilo que se pretende pesquisar.
+]
+]
+
+.pull-right[
+.content-box-army[
+**Planejamento** - Planejar a realização das fases seguintes: determinando o
+objetivo da pesquisa, as características da amostra, os métodos que serão utilizados e o processamento de dados.
+]
+]
+
+.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+---
+
+## Fases do método estatístico
+.content-box-army[
+**Coleta de dados** - A coleta pode ser de dois tipos: .red[coleta direta] e .red[coleta indireta].
+]
+
+1) .blue[Coleta direta] - obtida diretamente da fonte. Levantamento de registros (nascimentos, óbitos, notas fiscais, impostos, entre outros) ou coletados diretamente através de inquéritos, questionários etc. Esses dados são chamados de dados primários. Esta coleta pode ser classificada como:
+
+a) Coleta contínua: quando feita de forma contínua, como registros de nascimento, óbitos, casamentos, frequência de alunos às aulas, etc. (CRESPO, 2002).
+
+b) Coleta periódica: quando feita em intervalos constantes de tempo, como censos (de 10 em 10 anos), avaliações mensais dos alunos, recenseamento demográfico, censo industrial, e outros (CRESPO, 2002)
+
+c) Coleta ocasional: quando feita em determinada situação para atender a um objetivo, como pesquisa de mortalidade de um rebanho, pesquisa de um produto no mercado, registro de casos de dengue, etc.
+
+2) .blue[Coleta indireta] - é inferida de elementos conhecidos, através de uma coleta direta (dados primários), ou do conhecimento de características relacionadas ao fenômeno estudado.
+
+
+
+
+.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+
+---
+
+## Fases do método estatístico
+
+**Os dados podem ser:**
+
+- .blue[Primários] - quando são publicados pela própria pessoa ou organização que os haja recolhido (coleta direta) (TOLEDO; OVALLE, 2008). As fontes básicas de dados primários são: entrevistas, telefone, questionário.
+
+- .blue[Secundários] - quando são publicados por outra organização (dados primários) (TOLEDO; OVALLE, 2008), ou seja, já foram coletados, e em algumas situação, até analisados e estão à disposição dos interessados. Algumas das fontes de dados secundários são: a própria empresa, publicações e governos.
+
+
+.content-box-army[
+**Apuração dos dados** - Resumo dos dados através de sua contagem e
+agrupamento: condensação e a tabulação de dados; soma e processamento dos dados obtidos mediante critérios de classificação. Pode ser manual, mecânica ou eletrônica (TOLEDO; OVALLE, 2008).
+]
+
+.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+
+---
+
+## Fases do método estatístico
+
+
+.content-box-army[
+**Apresentação dos dados** - Há duas formas de apresentação que não se excluem mutuamente (TOLEDO; OVALLE, 2008).]
+
+1) A apresentação tabular: é uma apresentação numérica dos dados em linhas e colunas distribuídas de modo ordenado, segundo regras práticas fixadas pelo Conselho Nacional de Estatística.
+
+2) A apresentação gráfica dos dados numéricos constitui uma apresentação geométrica permitindo uma visão rápida e clara do fenômeno.
+
+
+.content-box-army[
+**Análise e interpretação dos dados** - A última fase do trabalho estatístico é a mais importante e delicada. Portanto, está ligada essencialmente ao cálculo de medidas e coeficientes, cuja finalidade principal é descrever o fenômeno (Estatística descritiva).
+]
+
+.content-box-red[
+`r icons::fontawesome("question")` **Hora de pensar um pouco** - A partir do que foi aprendido até o momento, apresente sua própria definição do que é Estatística.
+]
+
+.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+
+## Princípios da Análise Exploratória de Dados (AED)
+
+.small[
+.content-box-red[
+O objetivo da AED é entender melhor os dados e o processo pelo qual eles foram gerados.
+]
+
+Dentro da estatística, é uma etapa anterior aos estudos inferenciais (por exemplo, teste de hipóteses, estimativas pontuais e de intervalo, etc.), onde a AED tem um conjunto de objetivos muito diversificado e importante:
+
+- Forneça uma oportunidade para fazer uma limpeza de dados adicional.
+- Entenda como os dados são gerados e quais podem ser as relações entre as variáveis.
+- Sugira perguntas e hipóteses que possam ser posteriormente respondidas e testadas.
+- Identifique quais métodos estatísticos podem ser mais apropriados para os dados para acompanhar essas questões e hipóteses.
+
+A AED foi criada, desenvolvida e defendida por [**John Tukey**](http://mnstats.morris.umn.edu/introstat/history/w98/Tukey.html). Seu livro, intitulado *“Exploratory Data Analysis”* foi publicado em 1977 e ainda está em uso hoje. Pode parecer uma estranheza, mas foi uma mudança fundamental na forma como a ciência de dados/estatística era feita. Fundamentalmente, ele resume a AED com esta citação:
+
+.content-box-yellow[
+.red[*“It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it.” – J. W. Tukey (1977)"*]]
+]
+---
+
+## Princípios da Análise Exploratória de Dados (AED)
+
+Se você não entender os dados, fica difícil saber como analisá-los. As análises confirmatória e exploratória não são superiores ou inferiores entre si, mas complementares. Com todas as ferramentas disponíveis para fazer as duas coisas, ignorar uma delas é um grande equivoco.
+
+.content-box-yellow[
+.red[*“Today, exploratory and confirmatory (analysis) – can – and should – proceed side by side.” – J. W. Tukey (1977)"*]]
+
+
+.content-box-purple[
+**Importante!**
+
+
+
+A utilização de programas estatísticos (por exemplo, `R`) não é componente desta disciplina. Portanto, não é objeto de avaliação. No entanto, serão apresentadas maneiras de realizar o que será ensinado durante o curso de maneira computacional.
+]
+
+
+---
+
+## Conceitos importantes 
+
+.content-box-blue[
+**População:** 
+
+É um conjunto de indivíduo ou objetos que apresentam pelo menos uma característica em comum. A população pode ser finita ou infinita. Na prática, quanto a população é finita, com um número grande de elementos, considera-se como população infinita.
+]
+
+.content-box-blue[
+**Amostra:** 
+
+Considerando-se a impossibilidade, na maioria das vezes, do tratamento de todos os elementos da população, retira-se uma amostra. Para os propósitos desse curso, admite-se que uma amostra já tenha sido escolhida de conformidade com alguma técnica de amostragem.
+
+]
+
+
+.content-box-blue[
+**Censo:** 
+
+Estudo de uma população com base em todos os seus elementos.
+]
+
+---
+
+## Conceitos importantes 
+
+.content-box-blue[
+**Divisão da estatística:** 
+
+Podemos dividir a estatística em duas partes: Estatística Descritiva e Estatística Inferencial.
+]
+
+.pull-left[
+.content-box-red[
+**Estatística Descritiva:**
+
+Constitui num conjunto de técnicas que objetivam descrever, analisar e interpretar os dados numéricos de uma população ou amostra. Os dados podem ser resumidos de forma numérica ou gráfica.
+]
+]
+
+.pull-right[
+
+.content-box-yellow[
+**Estatística Inferencial:**
+
+Estatísticas inferenciais usam uma amostra aleatória dos dados coletados de uma população para descrever e fazer inferências sobre a população. As estatísticas inferenciais são valiosas quando não é conveniente ou possível examinar cada membro de uma população inteira.
+
+]
+]
+
+.content-box-green[
+**Tabelas Estatísticas:**
+
+Uma tabela deve apresentar a seguinte estrutura: i) Cabeçalho, ii) Corpo; iii) rodapé.
+]
+
+---
+
+## Conceitos importantes 
+
+Quando estamos estudando uma variável, nosso principal interesse é conhecer seu comportamento, analisando a ocorrência de suas possíveis realizações.
+
+
+```{r echo=FALSE}
+library(knitr)
+library(kableExtra)
+df <- data.frame(Grau = c("Fundamental", "Médio", "Superior", "Total"), 
+                 Freq = linebreak(c(1650, 1020, 1330, 2000)), 
+                 Porc = linebreak(c(32.50, 51.00, 16.50, 100.00)))
+kable(df, col.names = c("Grau de Instrução", "Frequência", "Porcentagem (%)"), escape = F, caption = "Frequências e porcentagens dos 2000 empregrados da Companhia MB, segundo o grau de instrução.") %>%
+  kable_styling(latex_options = "hold_position") %>%
+   add_footnote("Fonte: Estatística Básica (Bussab e Morettin)")
 ```
+
+---
+
+## Conceitos importantes 
+
+.content-box-red[
+O cabeçalho deve conter o suficiente para que sejam respondidas as perguntas:
+
+- O que está representando?
+- Onde ocorreu?
+- Quando ocorreu?
+]
+
+.content-box-yellow[
+O corpo da tabela é representado por colunas e subcolunas dentro dos quais serão registrados os dados numéricos e informações.
+]
+
+.content-box-green[
+O rodapé é reservado para observações pertinentes à tabela, bem como para o registro e identificação da fonte dos dados.
+]
+
+---
+
+## Conceitos importantes
+
+```{r echo=FALSE}
+library(knitr)
+library(kableExtra)
+df <- data.frame(Grau = c("Fundamental", "Médio", "Superior", "Total"), 
+                 Freq = linebreak(c(1650, 1020, 1330, 2000)), 
+                 Porc = linebreak(c(32.50, 51.00, 16.50, 100.00)))
+kable(df, col.names = c("Grau de Instrução", "Frequência", "Porcentagem (%)"), escape = F, caption = "Frequências e porcentagens dos 2000 empregrados da Companhia MB, segundo o grau de instrução em 2024.") %>%
+  kable_styling(latex_options = "hold_position") %>%
+   add_footnote("Fonte: Estatística Básica (Bussab e Morettin)", notation = "none")
+```
+---
+
+## Exercício
+
+Construir uma tabela com as informações sobre o tipo de escola frequentada durante o Ensino Médio pelos alunos da disciplina de Estatística Aplicada às Ciências Sociais do período 2025.1 da Universidade Federal do Ceará.
+---
+
+## Tipos de variáveis
+
+.content-box-red[
+
+Uma **variável** é uma característica de interesse que associamos à população para ser estudada estatisticamente. 
+
+**Exemplo:** Altura, estado civil e salários de entrevistados em uma pesquisa.
+]
+
+As variáveis pode ser de dois tipos:
+
+.pull-left[
+.content-box-blue[
+**Qualitativas**
+
+Apresentam como possíveis resultados uma qualidade (ou atributo) do elemento pesquisado.
+
+- .red[Qualitativa Norminal:] Não existe ordenação possível nas realizações das categorias;
+
+- .red[Qualitativa Ordinal:] Existe ordem ou hierarquia entre as realizações de cada variável.
+]
+]
+
+.pull-right[
+.content-box-yellow[
+**Quantitativas:**
+
+São aquelas em que as possíveis realizações são valores numéricos.
+
+- .red[Quantitativa Discreta:] são aquelas que resultam de contagem. Só podem assumir valores inteiros. 
+
+
+- .red[Quantitativa Contínua:] são aquelas que resultam de medição. 
+]]
+
+---
+
+
+## Exercícios
+
+Classifique as variáveis abaixo:
+
+1. Cor dos olhos dos candidatos a modelos de uma agência.
+2. Número de filhos de casais residentes em uma cidade.
+3. Causas de acidentes de trabalho de funcionários de uma fábrica.
+4. Salários de funcionários de uma empresa.
+5. Renda de clientes de um banco.
+6. Classificação em concurso público.

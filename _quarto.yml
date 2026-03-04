@@ -1,23 +1,47 @@
 project:
   type: book
-
+  output-dir: docs
+  
 book:
-  title: "Book_ECS"
-  author: "Norah Jones"
-  date: "19/08/2025"
+  #title: "Análise Inferencial"
+  #subtitle: "Departamento de Estatística e Matemática Aplicada"
+  #description: "Laboratório de Inovação em Estatística - StatLab"
+  #author: "Manoel Santos-Neto"
+  #date: today
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
+    - prob.qmd
+    - inference.qmd
+    - reg.qmd
     - references.qmd
 
 bibliography: references.bib
+csl: https://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas # Opcional: para normas ABNT
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
   pdf:
     documentclass: scrreprt
+    pdf-engine: xelatex
+    lang: pt-br
+    include-in-header: macros.tex
+    include-before-body: cover.tex
 
 editor: visual
+
+
+
+
+
+
+
+
+
+
 

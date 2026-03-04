@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fundamentos de Estatística - 1&nbsp; Introdução</title>
+<title>Estatística Aplicada às Ciências Sociais - 3&nbsp; Introdução à Probabilidade</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./inference.html" rel="next">
+<link href="./summary.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prob.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introdução à Probabilidade</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Fundamentos de Estatística</a> 
+      <a href="./">Estatística Aplicada às Ciências Sociais</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
   </div>
 </li>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prob.html" class="sidebar-item-text sidebar-link">
+  <a href="./prob.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introdução à Probabilidade</span></span></a>
   </div>
 </li>
@@ -154,21 +154,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
-   
-  <ul>
-  <li><a href="#figuras-ilustres-na-área-de-estatística" id="toc-figuras-ilustres-na-área-de-estatística" class="nav-link active" data-scroll-target="#figuras-ilustres-na-área-de-estatística"><span class="header-section-number">1.1</span> Figuras ilustres na área de Estatística</a></li>
-  <li><a href="#atividade" id="toc-atividade" class="nav-link" data-scroll-target="#atividade"><span class="header-section-number">1.2</span> Atividade</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introdução à Probabilidade</span></h1>
 </div>
 
 
@@ -185,53 +178,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A origem da palavra <strong>Estatística</strong> está associada à palavra latina STATUS (Estado). Há indícios de que 3000 anos A.C. já se faziam <em>censos na Babilônia</em>, China e Egito e até mesmo o 4º livro do <em>Velho Testamento</em> faz referência à uma instrução dada a Moisés, para que fizesse um levantamento dos homens de Israel que estivessem aptos para guerrear. Usualmente, estas informações eram utilizadas para a <em>taxação de impostos</em> ou para o <em>alistamento militar</em>. O Imperador <em>César Augusto</em>, por exemplo, ordenou que se fizesse o Censo de todo o Império Romano.</p>
-<p>A palavra <strong>CENSO</strong> é derivada da palavra <em>CENSERE</em>, que em Latim significa <em>TAXAR</em>. Em 1085, <em>Guilherme, O Conquistador</em>, solicitou um levantamento estatístico da Inglaterra, que deveria conter informações sobre terras, proprietários, uso da terra, empregados e animais. Os resultados deste censo foram publicados em 1086 no livro intitulado <em>“Domesday Book”</em> e serviram de base para o <em>cálculo de impostos</em>.</p>
-<p>Contudo, mesmo que a prática de coletar dados sobre colheitas, composição da população humana ou de animais, impostos, etc., fosse conhecida pelos egípcios, hebreus, caldeus e gregos, e se atribuam a Aristóteles cento e oitenta descrições de Estados, apenas no <em>século XVII</em> a Estatística passou a ser considerada <em>disciplina autônoma</em>, tendo como objetivo básico a <em>descrição dos BENS do Estado</em>.</p>
-<p>A palavra <strong>Estatística</strong> foi cunhada pelo acadêmico alemão <em>Gottfried Achenwall</em> (1719-1772), que foi um notável continuador dos estudos de <em>Hermann Conrig</em> (1606-1681). A escola alemã atingiu sua maturidade com <em>A. L. Von Schlozer</em> (1735-1809), mas sempre com ideias diferentes daquelas que fundamentaram a Estatística Moderna. Com algum exagero, pode-se dizer que o seu principal legado foi o termo <em>STAATENKUNDE</em>, que deu origem à designação atual. Na Enciclopédia Britânica, o verbete <em>STATISTICS</em> apareceu em 1797.</p>
-<p>Em contraposição à natureza eminentemente qualitativa da escola alemã, na Inglaterra do século XVII surgiram os aritméticos políticos, dentre os quais se destacaram <em>John Graunt</em> (1620-1674) e <em>William Petty</em> (1623-1687). Eles preocuparam-se com o estudo numérico dos fenômenos sociais e políticos, na busca de leis quantitativas que pudessem explicá-los. O estudo consistia essencialmente de exaustivas análises de nascimentos e mortes, realizadas através das <em>Tábuas de Mortalidade</em>, que deram origem às atuais tábuas usadas pelas companhias de seguros. Dessa forma, a escola dos aritméticos políticos pode ser considerada o berço da <em>Demografia</em>. Um de seus mais notáveis adeptos foi o pastor alemão <em>Sussmilch</em> (1707-1767), com o qual pode-se dizer que a Estatística aparece pela primeira vez como meio indutivo de investigação.</p>
-<p>Na última metade do século XIX, os alemães <em>Helmert</em> (1843-1917) e <em>Wilhelm Lexis</em> (1837-1914), o dinamarquês <em>Thorvald Nicolai Thiele</em> (1838-1910) e o inglês <em>Francis Ysidro Edgeworth</em> (1845-1926), obtiveram resultados extremamente valiosos para o desenvolvimento da Inferência Estatística, muitos dos quais só foram completamente compreendidos mais tarde. Contudo, o impulso decisivo deve-se a <em>Karl Pearson</em> (1857-1936), <em>William S. Gosset</em> (1876-1937) e, em especial, a <em>Ronald A. Fisher</em> (1890-1962).</p>
-<section id="figuras-ilustres-na-área-de-estatística" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="figuras-ilustres-na-área-de-estatística"><span class="header-section-number">1.1</span> Figuras ilustres na área de Estatística</h2>
-<p><a href="https://www.britannica.com/biography/Karl-Pearson">Karl Pearson</a> (1857-1936) formou-se em 1879 pela Cambridge University e inicialmente dedicou-se ao estudo da evolução de Darwin, aplicando os métodos estatísticos aos problemas biológicos relacionados com a evolução e hereditariedade. Em 1896, Pearson foi eleito membro da Royal Society of London. Entre 1893 e 1912 escreveu um conjunto de 18 artigos denominado Mathematical Contribution to the Theory Evolution, com contribuições extremamente importantes para o desenvolvimento da teoria da Análise de Regressão e do Coeficiente de Correlação, bem como do Teste de Hipóteses de Qui-quadrado. Em sua maioria, seus trabalhos foram publicados na revista Biometrika, que fundou em parceria com <strong>Walter Frank Raphael Weldon</strong> (1860-1906) e <strong>Francis Galton</strong> (1822-1911). Além da valiosa contribuição que deu para a teoria da regressão e da correlação, Pearson fez com que a Estatística fosse reconhecida como uma disciplina autônoma. Uma coleção de seus artigos foi publicada em <em>“Karl Pearson Early Statistical Papers” (Ed. por E. S. Pearson, Cambridge University Press, 1948)</em>.</p>
-<p><a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2008.00279.x">William Sealey Gosset</a> (1876-1937) estudou Química e Matemática na <em>New College Oxford</em>. Em 1899 foi contratado como Químico da Cervejaria Guiness em Dublin, desenvolvendo um trabalho extremamente importante na área de Estatística. Devido à necessidade de manipular dados provenientes de pequenas amostras, extraídas para melhorar a qualidade da cerveja, Gosset derivou o teste t de Student baseado na distribuição de probabilidades. Esses resultados foram publicados em 1908 na revista <em>Biometrika</em>, sob o pseudônimo de Student, dando origem a uma nova e importante fase dos estudos estatísticos. <strong>Gosset</strong> usava o pseudônimo de <strong>Student</strong>, pois a Cervejaria Guiness não desejava revelar aos concorrentes os métodos estatísticos que estava empregando no controle de qualidade da cerveja. Os estudos de <strong>Gosset</strong> podem ser encontrados em <em>“Student Collected Papers” (Ed. por E.S.Pearson e J. Wishart, University College, Londres, 1942)</em>.</p>
-<p>A contribuição de <a href="https://www.ucl.ac.uk/biosciences/gee/ucl-centre-computational-biology/ronald-aylmer-fisher-1890-1962">Ronald Aylmer Fisher</a> (1890-1962) para a Estatística Moderna é, sem dúvidas, a .red[mais importante e decisiva de todas]. Formado em astronomia pela Universidade de Cambridge em 1912, foi o fundador do célebre Statistical Laboratory da prestigiosa Estação Agronômica de Rothamsted, contribuindo enormemente tanto para o desenvolvimento da Estatística quanto da Genética. Ele apresentou os princípios de .red[Planejamento de Experimentos], introduzindo os conceitos de .red[Aleatorização] e da .red[Análise da Variância], procedimentos muito usados atualmente. No princípio dos <strong>anos 20</strong>, estabeleceu o que a maioria aceita como a .red[estrutura da moderna Estatística Analítica], através do .red[conceito da verossimilhança (likelihood)]. O seu livro intitulado “Statistical Methods for Research Workers”, publicado pela primeira vez em 1925, foi extremamente importante para familiarizar os investigadores com as aplicações práticas dos métodos estatísticos e, também, para criar a .red[mentalidade estatística entre a nova geração de cientistas]. Os trabalhos de <strong>Fisher</strong> encontram-se dispersos em numerosas revistas, mas suas contribuições mais importantes foram reunidas em <em>“Contributions to Mathematical Statistics” (J. Wiley &amp; Sons, Inc.,Nova Iorque, 1950)</em>. Fisher foi eleito membro da <em>Royal Society</em> em 1929 e condecorado com as medalhas <em>Royal Medal of the Society</em> em 1938 e <em>Darwin Medal of the Society</em> em 1948. Em 1955 foi novamente condecorado, desta vez com a medalha <em>Copley Medal of the Royal Society</em>.</p>
-<p><a href="https://www.britannica.com/biography/Jakob-Bernoulli">Jakob Bernoulli</a> (1654-1705), estimulado por <em>Gottfried Wilhelm von Leibniz</em> (1646-1716) também dedicou-se ao estudo do Cálculo de Probabilidades, cuja grande obra denominada <em>“Ars Conjectandi”</em> foi publicada oito anos após a sua morte. Em <em>Ars Conjectandi</em> de <strong>Jacques Bernoulli</strong>, foi rigorosamente provada a .red[Lei dos Grandes Números de Bernoulli], considerada o .red[primeiro teorema limite]. Pode-se dizer que graças às contribuições de <strong>Bernoulli</strong> o .red[Cálculo de Probabilidades adquiriu o status de ciência]. Além da obra póstuma de <strong>Bernoulli</strong>, o início do século XVII foi marcado pelos livros de <em>Pierre Rémond de Montmort</em> (1678-1719), denominado <em>“Essai d’Analyse sur les Jeux de Hazard”</em>, e de <em>Abraham De Moivre</em> (1667-1754), intitulado <em>“The Doctrine of Chances”</em>.</p>
-<p><a href="https://www.britannica.com/biography/Abraham-de-Moivre">Abraham de Moivre</a> era Francês de nascimento, mas desde a sua infância refugiou-se na Inglaterra devido às guerras religiosas, fazendo aplicações ao .red[cálculo de anuidades] e estabelecendo uma .red[equação simples para a lei da mortalidade] entre 22 anos e o .red[limite da longevidade] que fixou em 86 anos. Mais tarde, na <em>“Miscellanea Analytica”</em>, apresentou resultados aos quais <strong>Laplace</strong> deu uma forma mais geral e que constituem o <em>segundo teorema limite</em>. Em 1738, com a segunda edição da <em>Doutrina das Chances (The Doctrine of Chances)</em>, publica formalmente a .red[Distribuição Normal], desenvolvida desde 1933.</p>
-<p>É extremamente importante falar, também, do reverendo <a href="https://www.britannica.com/topic/Nonconformist">Thomas Bayes</a> (1702-1761) a quem se deve o .red[conceito de probabilidade inversa], relacionado com situações em que se caminha do particular para o geral. No seu livro denominado <em>“Essay towards solving a problem of the doctrine of chances” (Philosophical Transactions of the Royal Society of London, 1764-65, póstumo)</em>, <strong>Bayes</strong> formula através do .red[teorema que leva seu nome] e do postulado que tantas vezes se lhe associa: a primeira tentativa de matematização da .red[inferência Estatística]. Mesmo sem ter publicado nenhum trabalho com seu nome, em 1742 <strong>Thomas Bayes</strong> foi eleito membro da Royal Society of London.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Gauss.webp" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Johann Carl Friedrich Gauss</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:58%;">
-<p>Os estudos dos astrônomos Pierre-Simon Laplace (1749-1827), <a href="https://www.britannica.com/biography/Carl-Friedrich-Gauss">Johann Carl Friedrich Gauss</a> (1777-1855) e <em>Lambert Adolphe Jacques Quetelet</em> (1796-1874) foram fundamentais para o desenvolvimento do Cálculo de Probabilidades. Devido aos novos métodos e idéias, o trabalho de <em>Laplace</em> de 1812, intitulado <em>“Théorie Analytique des Probabilités”</em>, até o presente é considerado um dos mais importantes trabalhos sobre a matéria. <strong>Johann Carl Friedrich Gauss</strong>, professor de astronomia e diretor do Observatório de Gottingen, em 1809 apresentou o estudo intitulado <em>“Theoria combinationis Observatorium Erroribus Minimis Obnoxia”</em>, explanando uma teoria sobre a análise de observações aplicável a qualquer ramo da ciência, alargando o campo de aplicação do Cálculo de Probabilidades. Com <em>Lambert Adolphe Jacques Quetelet</em>, por sua vez, inicia-se a aplicação aos fenômenos sociais. O seu escrito <em>“Sur l’homme et le développement de ses facultes”</em> foi publicado em segunda edição com o título <em>“Physique sociale”</em> ou <em>“Essai sur le développement des facultés de l’homme”</em>, que incluía pormenorizada análise da teoria da probabilidade. <em>Quetelet</em> introduziu também o conceito de “homem médio” e chamou particular atenção para a notável consistência dos fenômenos sociais. Por exemplo, mostrou que fatores como a criminalidade apresentam permanências em relação a diferentes países e classes sociais.</p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:58%;">
-<p>Na segunda metade do século XIX a Teoria das Probabilidades atingiu um dos pontos mais altos com os trabalhos da escola russa fundada por <em>Pafnuty Lvovich Chebyshev</em> (1821-1894), que contou com representantes como <em>Andrei Andreyevich Markov</em> (1856-1922) e <em>Aleksandr Mikhailovich Lyapunov</em> (1857-1918). Contudo, o seu maior expoente foi <a href="https://www.britannica.com/biography/Andrey-Nikolayevich-Kolmogorov">Andrey Nikolayevich Kolmogorov</a> (1903-1987), a quem se deve um estudo indispensável sobre os fundamentos da Teoria das Probabilidades (os axiomas de Kolmogorov), denominado <em>“Grundbegrife der Warscheinlichkeitrechnung”</em>, publicado em 1933. Em 1950 foi traduzido para o Inglês sob o título <em>“Foundations of Probability”</em>.</p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Kolmogorov1966.webp" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Andrey Nikolayevich Kolmogorov</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="atividade" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="atividade"><span class="header-section-number">1.2</span> Atividade</h2>
-<ol type="1">
-<li>Foram destacados apenas contribuições masculinas para a área da Estatística. Pesquise sobre mulheres que foram importantes para o desenvolvimento desta área.</li>
-</ol>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -645,13 +593,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Prefácio">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefácio</span>
+      <a href="./summary.html" class="pagination-link" aria-label="Estatística Descritiva">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Estatística Descritiva">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./inference.html" class="pagination-link" aria-label="Introdução à Inferência">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introdução à Inferência</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
