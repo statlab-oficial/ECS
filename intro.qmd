@@ -239,9 +239,6 @@ Segundo @castanheira2003, o método divide-se em seis etapas lógicas:
 6. **Análise e Interpretação:** Cálculo de medidas e descrição do fenômeno.
 
 
-
-
-
 ## Coleta e Tipos de Dados
 
 ### Formas de Coleta

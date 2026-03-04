@@ -120,6 +120,46 @@
     ]
   },
   {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
+    "section": "",
+    "text": "2.1 Os Três Pilares da Descrição\nPara descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#os-três-pilares-da-descrição",
+    "href": "summary.html#os-três-pilares-da-descrição",
+    "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
+    "section": "",
+    "text": "2.1.1 1. Tendência Central\nBuscam um único valor que represente o “centro” da distribuição. * Média (\\(\\mu\\) ou \\(\\bar{x}\\)): O ponto de equilíbrio matemático. * Mediana: O valor que divide os dados exatamente ao meio. * Moda: O valor que aparece com maior frequência.\n\n\n2.1.2 2. Dispersão ou Variabilidade\nIndicam o quão “esticados” ou agrupados estão os dados em torno do centro. * Variância (\\(\\sigma^2\\)): A média dos quadrados dos desvios. * Desvio Padrão (\\(\\sigma\\)): A medida de dispersão na mesma unidade dos dados originais. * Amplitude: A distância entre o máximo e o mínimo.\n\n\n2.1.3 3. Forma e Posição\n\nAssimetria (Skewness): Indica se os dados se concentram mais à esquerda ou à direita.\nCurtose: Mede o “pico” ou achatamento da distribuição.\nQuartis e Percentis: Dividem os dados em partes iguais (ex: os 25% mais ricos).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#o-fluxo-da-análise-descritiva",
+    "href": "summary.html#o-fluxo-da-análise-descritiva",
+    "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
+    "section": "2.2 O Fluxo da Análise Descritiva",
+    "text": "2.2 O Fluxo da Análise Descritiva\nA jornada do dado bruto até a informação segue este fluxo:\n\nColeta e Crítica: Limpeza de erros e inconsistências.\nOrganização: Criação de tabelas de frequências.\nVisualização: Gráficos (Histogramas, Boxplots, Dispersão).\nResumo Numérico: Cálculo das estatísticas (Média, Desvio Padrão, etc).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#exemplo-prático-em-r",
+    "href": "summary.html#exemplo-prático-em-r",
+    "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
+    "section": "2.3 Exemplo Prático em R",
+    "text": "2.3 Exemplo Prático em R\nSe você deseja visualizar a distribuição de uma variável rapidamente, o R oferece ferramentas poderosas:\n\nlibrary(ggplot2)\n\ndata &lt;- data.frame(valores = rnorm(200, mean = 50, sd = 10))\n\nggplot(data, aes(x = valores)) +\n  geom_histogram(aes(y = ..density..), binwidth = 5, fill = \"#69b3a2\", color = \"white\") +\n  geom_density(alpha = .2, fill = \"#404080\") +\n  theme_minimal() +\n  labs(title = \"Distribuição de Frequências\", x = \"Valor\", y = \"Densidade\")\n\nWarning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(density)` instead.\n\n\n\n\n\n\n\n\nFigure 2.1: Exemplo de Histograma com Curva de Densidade\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPor onde começar?\nPrimeiro é necessário indentificar qual o tipo de variável que está sendo estudada. Depois disso, usar gráficos ou métodos adequados.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "Referências",

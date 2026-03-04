@@ -1,2 +1,73 @@
-# Estatística Descritiva
+# Estatística Descritiva: A Arte de Narrar Dados
+
+A **Estatística Descritiva** é a etapa inicial de qualquer análise quantitativa. Seu objetivo primordial não é tirar conclusões definitivas ou fazer previsões, mas sim **organizar, resumir e descrever** os dados para que eles revelem seus padrões ocultos.
+
+::: {.callout-note}
+## O que ela responde?
+Diferente da Inferencial, que busca "adivinhar" o todo a partir da parte, a Descritiva foca no **aqui e agora**: 
+* Qual é o valor central? 
+* Os dados estão muito espalhados? 
+* Existem valores atípicos (*outliers*)?
+:::
+
+
+
+## Os Três Pilares da Descrição
+
+Para descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:
+
+### 1. Tendência Central
+Buscam um único valor que represente o "centro" da distribuição.
+* **Média ($\mu$ ou $\bar{x}$):** O ponto de equilíbrio matemático.
+* **Mediana:** O valor que divide os dados exatamente ao meio.
+* **Moda:** O valor que aparece com maior frequência.
+
+### 2. Dispersão ou Variabilidade
+Indicam o quão "esticados" ou agrupados estão os dados em torno do centro.
+* **Variância ($\sigma^2$):** A média dos quadrados dos desvios.
+* **Desvio Padrão ($\sigma$):** A medida de dispersão na mesma unidade dos dados originais.
+* **Amplitude:** A distância entre o máximo e o mínimo.
+
+### 3. Forma e Posição
+* **Assimetria (*Skewness*):** Indica se os dados se concentram mais à esquerda ou à direita.
+* **Curtose:** Mede o "pico" ou achatamento da distribuição.
+* **Quartis e Percentis:** Dividem os dados em partes iguais (ex: os 25% mais ricos).
+
+
+## O Fluxo da Análise Descritiva
+
+A jornada do dado bruto até a informação segue este fluxo:
+
+1.  **Coleta e Crítica:** Limpeza de erros e inconsistências.
+2.  **Organização:** Criação de tabelas de frequências.
+3.  **Visualização:** Gráficos (Histogramas, Boxplots, Dispersão).
+4.  **Resumo Numérico:** Cálculo das estatísticas (Média, Desvio Padrão, etc).
+
+---
+
+## Exemplo Prático em R
+
+Se você deseja visualizar a distribuição de uma variável rapidamente, o `R` oferece ferramentas poderosas:
+
+```{r}
+#| label: fig-exemplo
+#| fig-cap: "Exemplo de Histograma com Curva de Densidade"
+library(ggplot2)
+
+data <- data.frame(valores = rnorm(200, mean = 50, sd = 10))
+
+ggplot(data, aes(x = valores)) +
+  geom_histogram(aes(y = ..density..), binwidth = 5, fill = "#69b3a2", color = "white") +
+  geom_density(alpha = .2, fill = "#404080") +
+  theme_minimal() +
+  labs(title = "Distribuição de Frequências", x = "Valor", y = "Densidade")
+```
+
+
+::: {.callout-tip}
+Por onde começar?
+
+Primeiro é necessário indentificar qual o tipo de variável que está sendo estudada. Depois disso, usar gráficos ou métodos adequados.
+:::
+
 

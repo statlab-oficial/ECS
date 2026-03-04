@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Estatística Descritiva</title>
+<title>2&nbsp; Estatística Descritiva: A Arte de Narrar Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,6 +105,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -84,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva: A Arte de Narrar Dados</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -122,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva: A Arte de Narrar Dados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -155,14 +218,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#os-três-pilares-da-descrição" id="toc-os-três-pilares-da-descrição" class="nav-link active" data-scroll-target="#os-três-pilares-da-descrição"><span class="header-section-number">2.1</span> Os Três Pilares da Descrição</a>
+  <ul class="collapse">
+  <li><a href="#tendência-central" id="toc-tendência-central" class="nav-link" data-scroll-target="#tendência-central"><span class="header-section-number">2.1.1</span> 1. Tendência Central</a></li>
+  <li><a href="#dispersão-ou-variabilidade" id="toc-dispersão-ou-variabilidade" class="nav-link" data-scroll-target="#dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> 2. Dispersão ou Variabilidade</a></li>
+  <li><a href="#forma-e-posição" id="toc-forma-e-posição" class="nav-link" data-scroll-target="#forma-e-posição"><span class="header-section-number">2.1.3</span> 3. Forma e Posição</a></li>
+  </ul></li>
+  <li><a href="#o-fluxo-da-análise-descritiva" id="toc-o-fluxo-da-análise-descritiva" class="nav-link" data-scroll-target="#o-fluxo-da-análise-descritiva"><span class="header-section-number">2.2</span> O Fluxo da Análise Descritiva</a></li>
+  <li><a href="#exemplo-prático-em-r" id="toc-exemplo-prático-em-r" class="nav-link" data-scroll-target="#exemplo-prático-em-r"><span class="header-section-number">2.3</span> Exemplo Prático em R</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva: A Arte de Narrar Dados</span></h1>
 </div>
 
 
@@ -179,8 +255,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>A <strong>Estatística Descritiva</strong> é a etapa inicial de qualquer análise quantitativa. Seu objetivo primordial não é tirar conclusões definitivas ou fazer previsões, mas sim <strong>organizar, resumir e descrever</strong> os dados para que eles revelem seus padrões ocultos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+O que ela responde?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Diferente da Inferencial, que busca “adivinhar” o todo a partir da parte, a Descritiva foca no <strong>aqui e agora</strong>: * Qual é o valor central? * Os dados estão muito espalhados? * Existem valores atípicos (<em>outliers</em>)?</p>
+</div>
+</div>
+<section id="os-três-pilares-da-descrição" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="os-três-pilares-da-descrição"><span class="header-section-number">2.1</span> Os Três Pilares da Descrição</h2>
+<p>Para descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:</p>
+<section id="tendência-central" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="tendência-central"><span class="header-section-number">2.1.1</span> 1. Tendência Central</h3>
+<p>Buscam um único valor que represente o “centro” da distribuição. * <strong>Média (<span class="math inline">\(\mu\)</span> ou <span class="math inline">\(\bar{x}\)</span>):</strong> O ponto de equilíbrio matemático. * <strong>Mediana:</strong> O valor que divide os dados exatamente ao meio. * <strong>Moda:</strong> O valor que aparece com maior frequência.</p>
+</section>
+<section id="dispersão-ou-variabilidade" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> 2. Dispersão ou Variabilidade</h3>
+<p>Indicam o quão “esticados” ou agrupados estão os dados em torno do centro. * <strong>Variância (<span class="math inline">\(\sigma^2\)</span>):</strong> A média dos quadrados dos desvios. * <strong>Desvio Padrão (<span class="math inline">\(\sigma\)</span>):</strong> A medida de dispersão na mesma unidade dos dados originais. * <strong>Amplitude:</strong> A distância entre o máximo e o mínimo.</p>
+</section>
+<section id="forma-e-posição" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="forma-e-posição"><span class="header-section-number">2.1.3</span> 3. Forma e Posição</h3>
+<ul>
+<li><strong>Assimetria (<em>Skewness</em>):</strong> Indica se os dados se concentram mais à esquerda ou à direita.</li>
+<li><strong>Curtose:</strong> Mede o “pico” ou achatamento da distribuição.</li>
+<li><strong>Quartis e Percentis:</strong> Dividem os dados em partes iguais (ex: os 25% mais ricos).</li>
+</ul>
+</section>
+</section>
+<section id="o-fluxo-da-análise-descritiva" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="o-fluxo-da-análise-descritiva"><span class="header-section-number">2.2</span> O Fluxo da Análise Descritiva</h2>
+<p>A jornada do dado bruto até a informação segue este fluxo:</p>
+<ol type="1">
+<li><strong>Coleta e Crítica:</strong> Limpeza de erros e inconsistências.</li>
+<li><strong>Organização:</strong> Criação de tabelas de frequências.</li>
+<li><strong>Visualização:</strong> Gráficos (Histogramas, Boxplots, Dispersão).</li>
+<li><strong>Resumo Numérico:</strong> Cálculo das estatísticas (Média, Desvio Padrão, etc).</li>
+</ol>
+<hr>
+</section>
+<section id="exemplo-prático-em-r" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="exemplo-prático-em-r"><span class="header-section-number">2.3</span> Exemplo Prático em R</h2>
+<p>Se você deseja visualizar a distribuição de uma variável rapidamente, o <code>R</code> oferece ferramentas poderosas:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">valores =</span> <span class="fu">rnorm</span>(<span class="dv">200</span>, <span class="at">mean =</span> <span class="dv">50</span>, <span class="at">sd =</span> <span class="dv">10</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> valores)) <span class="sc">+</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..), <span class="at">binwidth =</span> <span class="dv">5</span>, <span class="at">fill =</span> <span class="st">"#69b3a2"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> .<span class="dv">2</span>, <span class="at">fill =</span> <span class="st">"#404080"</span>) <span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribuição de Frequências"</span>, <span class="at">x =</span> <span class="st">"Valor"</span>, <span class="at">y =</span> <span class="st">"Densidade"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.
+ℹ Please use `after_stat(density)` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-exemplo" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="summary_files/figure-html/fig-exemplo-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Exemplo de Histograma com Curva de Densidade
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Por onde começar?</p>
+<p>Primeiro é necessário indentificar qual o tipo de variável que está sendo estudada. Depois disso, usar gráficos ou métodos adequados.</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
