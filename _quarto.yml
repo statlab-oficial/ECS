@@ -3,11 +3,7 @@ project:
   output-dir: docs
   
 book:
-  #title: "Análise Inferencial"
-  #subtitle: "Departamento de Estatística e Matemática Aplicada"
-  #description: "Laboratório de Inovação em Estatística - StatLab"
-  #author: "Manoel Santos-Neto"
-  #date: today
+
   chapters:
     - index.qmd
     - intro.qmd
