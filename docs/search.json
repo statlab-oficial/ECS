@@ -60,73 +60,63 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Estatística Descritiva",
-    "section": "",
-    "text": "2.1 1. Fases do Método Estatístico",
+    "objectID": "intro.html#fases-do-método-estatístico",
+    "href": "intro.html#fases-do-método-estatístico",
+    "title": "1  Introdução",
+    "section": "1.3 Fases do Método Estatístico",
+    "text": "1.3 Fases do Método Estatístico\n\n1.3.1 Métodos de Pesquisa\nNa pesquisa científica, o procedimento geral consiste em formular hipóteses e testá-las. Inicialmente, essas hipóteses são formuladas em termos científicos da área de estudo e, em seguida, expressas em termos estatísticos.\n\n1.3.1.1 O Método Científico\nConjunto de normas básicas para a produção de conhecimento com rigor científico. Destacamos dois métodos:\n\n\n\n\n\n\n\nNote\n\n\n\nMétodo Experimental Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química (Crespo, 2002).\n\n\n\n\n\n\n\n\nNote\n\n\n\nMétodo Estatístico Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma (Costa, 2011).\n\n\n\n\n\n\n1.3.2 As Fases do Método Estatístico\nSegundo Castanheira (2003), o método divide-se em seis etapas lógicas:\n\nDefinição do Problema: Saber exatamente o que se pretende pesquisar.\nPlanejamento: Determinar objetivos, amostra e cronograma.\nColeta de Dados: Obtenção das informações (Primárias ou Secundárias).\nApuração dos Dados: Resumo, contagem e tabulação.\nApresentação dos Dados: Exposição em tabelas ou gráficos.\nAnálise e Interpretação: Cálculo de medidas e descrição do fenômeno.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
-    "objectID": "summary.html#fases-do-método-estatístico",
-    "href": "summary.html#fases-do-método-estatístico",
-    "title": "2  Estatística Descritiva",
-    "section": "",
-    "text": "2.1.1 Métodos de Pesquisa\nNa pesquisa científica, o procedimento geral consiste em formular hipóteses e testá-las. Inicialmente, essas hipóteses são formuladas em termos científicos da área de estudo e, em seguida, expressas em termos estatísticos.\n\n2.1.1.1 O Método Científico\nConjunto de normas básicas para a produção de conhecimento com rigor científico. Destacamos dois métodos:\n\n\n\n\n\n\n\nNote\n\n\n\nMétodo Experimental Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química (Crespo, 2002).\n\n\n\n\n\n\n\n\nNote\n\n\n\nMétodo Estatístico Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma (Costa, 2011).\n\n\n\n\n\n\n2.1.2 As Fases do Método Estatístico\nSegundo Castanheira (2003), o método divide-se em seis etapas lógicas:\n\nDefinição do Problema: Saber exatamente o que se pretende pesquisar.\nPlanejamento: Determinar objetivos, amostra e cronograma.\nColeta de Dados: Obtenção das informações (Primárias ou Secundárias).\nApuração dos Dados: Resumo, contagem e tabulação.\nApresentação dos Dados: Exposição em tabelas ou gráficos.\nAnálise e Interpretação: Cálculo de medidas e descrição do fenômeno.",
+    "objectID": "intro.html#coleta-e-tipos-de-dados",
+    "href": "intro.html#coleta-e-tipos-de-dados",
+    "title": "1  Introdução",
+    "section": "1.4 Coleta e Tipos de Dados",
+    "text": "1.4 Coleta e Tipos de Dados\n\n1.4.1 Formas de Coleta\nA coleta pode ser classificada quanto à sua periodicidade:\n\nContínua: Registros constantes (nascimentos, óbitos).\nPeriódica: Intervalos constantes (Censos, avaliações mensais).\nOcasional: Situações emergenciais ou específicas (surto de dengue).\n\n\n\n1.4.2 Natureza dos Dados\n\n\n\n\n\n\n\n\nTipo\nDescrição\nFontes Comuns\n\n\n\n\nPrimários\nPublicados pela própria pessoa/órgão que os recolheu.\nEntrevistas, questionários.\n\n\nSecundários\nPublicados por outra organização (já existentes).\nIBGE, relatórios empresariais.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
-    "objectID": "summary.html#coleta-e-tipos-de-dados",
-    "href": "summary.html#coleta-e-tipos-de-dados",
-    "title": "2  Estatística Descritiva",
-    "section": "2.2 2. Coleta e Tipos de Dados",
-    "text": "2.2 2. Coleta e Tipos de Dados\n\n2.2.1 Formas de Coleta\nA coleta pode ser classificada quanto à sua periodicidade:\n\nContínua: Registros constantes (nascimentos, óbitos).\nPeriódica: Intervalos constantes (Censos, avaliações mensais).\nOcasional: Situações emergenciais ou específicas (surto de dengue).\n\n\n\n2.2.2 Natureza dos Dados\n\n\n\n\n\n\n\n\nTipo\nDescrição\nFontes Comuns\n\n\n\n\nPrimários\nPublicados pela própria pessoa/órgão que os recolheu.\nEntrevistas, questionários.\n\n\nSecundários\nPublicados por outra organização (já existentes).\nIBGE, relatórios empresariais.",
+    "objectID": "intro.html#análise-exploratória-de-dados-aed",
+    "href": "intro.html#análise-exploratória-de-dados-aed",
+    "title": "1  Introdução",
+    "section": "1.5 Análise Exploratória de Dados (AED)",
+    "text": "1.5 Análise Exploratória de Dados (AED)\n\n“It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it.” &gt; — Tukey (1977)\n\nA AED busca entender a estrutura dos dados antes da inferência. Seus objetivos incluem: * Limpeza de dados adicional. * Identificação de relações entre variáveis. * Sugestão de hipóteses para testes futuros.\n\n\n\n\n\n\nNota sobre Software\n\n\n\nA utilização de programas como o R é uma ferramenta complementar. Embora o foco seja o conceito, demonstraremos como realizar as análises de forma computacional.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
-    "objectID": "summary.html#análise-exploratória-de-dados-aed",
-    "href": "summary.html#análise-exploratória-de-dados-aed",
-    "title": "2  Estatística Descritiva",
-    "section": "2.3 3. Análise Exploratória de Dados (AED)",
-    "text": "2.3 3. Análise Exploratória de Dados (AED)\n\n“It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it.” &gt; — Tukey (1977)\n\nA AED busca entender a estrutura dos dados antes da inferência. Seus objetivos incluem: * Limpeza de dados adicional. * Identificação de relações entre variáveis. * Sugestão de hipóteses para testes futuros.\n\n\n\n\n\n\nNota sobre Software\n\n\n\nA utilização de programas como o R é uma ferramenta complementar. Embora o foco seja o conceito, demonstraremos como realizar as análises de forma computacional.",
+    "objectID": "intro.html#conceitos-fundamentais",
+    "href": "intro.html#conceitos-fundamentais",
+    "title": "1  Introdução",
+    "section": "1.6 Conceitos Fundamentais",
+    "text": "1.6 Conceitos Fundamentais\n\nPopulação: Conjunto total de elementos com uma característica comum.\nAmostra: Subconjunto representativo da população.\nCenso: Estudo que abrange todos os elementos da população.\n\n\n1.6.1 Divisão da Estatística\n\nDescritiva: Técnicas para descrever e resumir dados (tabelas e gráficos).\nInferencial: Uso de amostras para fazer generalizações sobre a população.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
-    "objectID": "summary.html#conceitos-fundamentais",
-    "href": "summary.html#conceitos-fundamentais",
-    "title": "2  Estatística Descritiva",
-    "section": "2.4 4. Conceitos Fundamentais",
-    "text": "2.4 4. Conceitos Fundamentais\n\nPopulação: Conjunto total de elementos com uma característica comum.\nAmostra: Subconjunto representativo da população.\nCenso: Estudo que abrange todos os elementos da população.\n\n\n2.4.1 Divisão da Estatística\n\nDescritiva: Técnicas para descrever e resumir dados (tabelas e gráficos).\nInferencial: Uso de amostras para fazer generalizações sobre a população.",
+    "objectID": "intro.html#tipos-de-variáveis",
+    "href": "intro.html#tipos-de-variáveis",
+    "title": "1  Introdução",
+    "section": "1.7 Tipos de Variáveis",
+    "text": "1.7 Tipos de Variáveis\nUma variável é a característica de interesse que estudamos em uma população.\n\n\n\n\n\n\n1.7.0.1 Qualitativas (Atributos)\n\nNominal: Sem ordem (Ex: Cor dos olhos, sexo).\nOrdinal: Com hierarquia (Ex: Escolaridade, classe social).\n\n\n\n1.7.0.2 Quantitativas (Números)\n\nDiscreta: Contagem, valores inteiros (Ex: Nº de filhos).\nContínua: Medição, valores reais (Ex: Peso, altura).",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
-    "objectID": "summary.html#tipos-de-variáveis",
-    "href": "summary.html#tipos-de-variáveis",
-    "title": "2  Estatística Descritiva",
-    "section": "2.5 5. Tipos de Variáveis",
-    "text": "2.5 5. Tipos de Variáveis\nUma variável é a característica de interesse que estudamos em uma população.\n\n\n\n\n\n\n2.5.0.1 Qualitativas (Atributos)\n\nNominal: Sem ordem (Ex: Cor dos olhos, sexo).\nOrdinal: Com hierarquia (Ex: Escolaridade, classe social).\n\n\n\n2.5.0.2 Quantitativas (Números)\n\nDiscreta: Contagem, valores inteiros (Ex: Nº de filhos).\nContínua: Medição, valores reais (Ex: Peso, altura).",
+    "objectID": "intro.html#exercícios-de-fixação",
+    "href": "intro.html#exercícios-de-fixação",
+    "title": "1  Introdução",
+    "section": "1.8 📝 Exercícios de Fixação",
+    "text": "1.8 📝 Exercícios de Fixação\nClassifique as variáveis abaixo:\n\nCor dos olhos de candidatos: ____________________\nNúmero de filhos de casais: ____________________\nSalários de funcionários: ____________________\nClassificação em concurso público: ____________________\nRenda de clientes de um banco: ____________________\n\n\n\n\n\nCASTANHEIRA, Nelson Pereira. Estatística aplicada a todos os níveis. Curitiba: IBPEX, 2003.\n\n\nCOSTA, Giovani Glaucio de Oliveira. Curso de estatística básica. São Paulo: Atlas, 2011.\n\n\nCRESPO, Antônio Arnot. Estatística fácil. 18. ed. São Paulo: Saraiva, 2002.\n\n\nTUKEY, John Wilder. Exploratory data analysis. Reading, Mass.: Addison-Wesley, 1977.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#exercícios-de-fixação",
-    "href": "summary.html#exercícios-de-fixação",
-    "title": "2  Estatística Descritiva",
-    "section": "2.6 📝 Exercícios de Fixação",
-    "text": "2.6 📝 Exercícios de Fixação\nClassifique as variáveis abaixo:\n\nCor dos olhos de candidatos: ____________________\nNúmero de filhos de casais: ____________________\nSalários de funcionários: ____________________\nClassificação em concurso público: ____________________\nRenda de clientes de um banco: ____________________\n\n\n\n\n\nCASTANHEIRA, Nelson Pereira. Estatística aplicada a todos os níveis. Curitiba: IBPEX, 2003.\n\n\nCOSTA, Giovani Glaucio de Oliveira. Curso de estatística básica. São Paulo: Atlas, 2011.\n\n\nCRESPO, Antônio Arnot. Estatística fácil. 18. ed. São Paulo: Saraiva, 2002.\n\n\nTUKEY, John Wilder. Exploratory data analysis. Reading, Mass.: Addison-Wesley, 1977.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
     ]
   },
   {
