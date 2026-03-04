@@ -140,21 +140,23 @@
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\va}{$X_1,\,X_2,\,\dots,\,X_n$}
 \newcommand{\vam}{$x_1,\,x_2\,\ldots,\,x_n$}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
 \KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
@@ -738,415 +740,193 @@ para o Inglês sob o título \emph{``Foundations of Probability''}.
 
 \chapter{Estatística Descritiva}\label{estatuxedstica-descritiva}
 
-\section{Fases do método
-estatístico}\label{fases-do-muxe9todo-estatuxedstico}
+Fases do Método e Conceitos Iniciais
+
+\hfill\break
+
+\section{1. Fases do Método
+Estatístico}\label{fases-do-muxe9todo-estatuxedstico}
 
 \subsection{Métodos de Pesquisa}\label{muxe9todos-de-pesquisa}
 
-Quando se faz uma pesquisa científica, o procedimento geral é formular
+Na pesquisa científica, o procedimento geral consiste em formular
 hipóteses e testá-las. Inicialmente, essas hipóteses são formuladas em
-termos científicos dentro da área de estudo. Em seguida, devem ser
-expressas em termos estatísticos.
+termos científicos da área de estudo e, em seguida, expressas em termos
+estatísticos.
 
-\subsubsection{Método Científico}\label{muxe9todo-cientuxedfico}
+\subsubsection{O Método Científico}\label{o-muxe9todo-cientuxedfico}
 
-Conjunto de normas básicas que devem ser seguidas para a produção de
-conhecimentos que têm o rigor da ciência, ou seja, é um método usado
-para a pesquisa e comprovação de um determinado conteúdo. Destacamos o
-\textbf{método experimental} e o \textbf{método estatístico}.
+Conjunto de normas básicas para a produção de conhecimento com rigor
+científico. Destacamos dois métodos:
 
-.pull-left{[} .content-box-yellow{[}
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, colback=white, bottomrule=.15mm, bottomtitle=1mm, toptitle=1mm, opacitybacktitle=0.6, arc=.35mm, breakable, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, leftrule=.75mm, title={Nota}, toprule=.15mm, left=2mm, opacityback=0, coltitle=black]
 
-\textbf{Método Experimental} - Consiste em manter constante todas as
-causas (fatores), menos uma, e variá-la de modo que o pesquisador possa
-descobrir seus efeitos, caso existam. É o método preferido no estudo da
-Física, da Química, etc. (CRESPO, 2002).
+\textbf{Método Experimental} Consiste em manter constantes todas as
+causas (fatores), menos uma, e variá-la para descobrir seus efeitos.
+Comum na Física e Química. \emph{(CRESPO, 2002)}
 
-{]} {]} .pull-right{[} .content-box-yellow{[} .footnotesize{[}
-\textbf{Método Estatístico} - Método que admite todas as causas
-presentes variando-as, dada a impossibilidade de manter as causas
-constantes, registrando essas variações e procurando determinar as
-influências que cabem a cada uma delas (COSTA, 2011). Exemplo: Quais as
-causas que definem o preço de uma mercadoria quando a sua oferta
-diminui?{]}{]}{]}
+\end{tcolorbox}
 
-{[}Créditos:{]}{[}https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1{]}
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, colback=white, bottomrule=.15mm, bottomtitle=1mm, toptitle=1mm, opacitybacktitle=0.6, arc=.35mm, breakable, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, leftrule=.75mm, title={Nota}, toprule=.15mm, left=2mm, opacityback=0, coltitle=black]
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\textbf{Método Estatístico} Admite todas as causas presentes
+variando-as, registrando essas variações para determinar a influência de
+cada uma. \emph{(COSTA, 2011)}
 
-\section{Fases do método
-estatístico}\label{fases-do-muxe9todo-estatuxedstico-1}
+\end{tcolorbox}
 
-As principais fases do método estatístico são:
+\subsection{As Fases do Método
+Estatístico}\label{as-fases-do-muxe9todo-estatuxedstico}
 
-1ª) Definição do problema;
-
-2ª) Planejamento;
-
-3ª) Coleta de dados;
-
-4ª) Apuração dos dados;
-
-5ª) Apresentação dos dados;
-
-6ª) Análise e interpretação dos dados (CASTANHEIRA, 2003).
-
-.pull-left{[} .content-box-army{[} \textbf{Definição do problema} -
-Saber exatamente aquilo que se pretende pesquisar.{]}{]}
-
-.pull-right{[} .content-box-army{[} \textbf{Planejamento} - Planejar a
-realização das fases seguintes: determinando o objetivo da pesquisa, as
-características da amostra, os métodos que serão utilizados e o
-processamento de dados.{]}{]}
-
-!{[}Créditos:{]}{[}https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1{]}()
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Fases do método
-estatístico}\label{fases-do-muxe9todo-estatuxedstico-2}
-
-.content-box-army{[} \textbf{Coleta de dados} - A coleta pode ser de
-dois tipos: \textbf{coleta direta} e \textbf{coleta indireta}.{]}
+Segundo Castanheira (2003), o método divide-se em seis etapas lógicas:
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Coleta direta - obtida diretamente da fonte. Levantamento de registros
-  (nascimentos, óbitos, notas fiscais, impostos, entre outros) ou
-  coletados diretamente através de inquéritos, questionários etc. Esses
-  dados são chamados de dados primários. Esta coleta pode ser
-  classificada como:
+  \textbf{Definição do Problema:} Saber exatamente o que se pretende
+  pesquisar.
+\item
+  \textbf{Planejamento:} Determinar objetivos, amostra e cronograma.
+\item
+  \textbf{Coleta de Dados:} Obtenção das informações (Primárias ou
+  Secundárias).
+\item
+  \textbf{Apuração dos Dados:} Resumo, contagem e tabulação.
+\item
+  \textbf{Apresentação dos Dados:} Exposição em tabelas ou gráficos.
+\item
+  \textbf{Análise e Interpretação:} Cálculo de medidas e descrição do
+  fenômeno.
 \end{enumerate}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\item
-  Coleta contínua: quando feita de forma contínua, como registros de
-  nascimento, óbitos, casamentos, frequência de alunos às aulas, etc.
-  (CRESPO, 2002).
-\item
-  Coleta periódica: quando feita em intervalos constantes de tempo, como
-  censos (de 10 em 10 anos), avaliações mensais dos alunos,
-  recenseamento demográfico, censo industrial, e outros (CRESPO, 2002)
-\item
-  Coleta ocasional: quando feita em determinada situação para atender a
-  um objetivo, como pesquisa de mortalidade de um rebanho, pesquisa de
-  um produto no mercado, registro de casos de dengue, etc.
-\end{enumerate}
+\section{2. Coleta e Tipos de Dados}\label{coleta-e-tipos-de-dados}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  .blue{[}Coleta indireta{]} - é inferida de elementos conhecidos,
-  através de uma coleta direta (dados primários), ou do conhecimento de
-  características relacionadas ao fenômeno estudado.
-\end{enumerate}
+\subsection{Formas de Coleta}\label{formas-de-coleta}
 
-.footer-note{[}.tiny{[}.green{[}Créditos:{]}{[}https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1{]}(){]}{]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Fases do método
-estatístico}\label{fases-do-muxe9todo-estatuxedstico-3}
-
-\textbf{Os dados podem ser:}
-
-\begin{itemize}
-\item
-  .blue{[}Primários{]} - quando são publicados pela própria pessoa ou
-  organização que os haja recolhido (coleta direta) (TOLEDO; OVALLE,
-  2008). As fontes básicas de dados primários são: entrevistas,
-  telefone, questionário.
-\item
-  .blue{[}Secundários{]} - quando são publicados por outra organização
-  (dados primários) (TOLEDO; OVALLE, 2008), ou seja, já foram coletados,
-  e em algumas situação, até analisados e estão à disposição dos
-  interessados. Algumas das fontes de dados secundários são: a própria
-  empresa, publicações e governos.
-\end{itemize}
-
-.content-box-army{[} \textbf{Apuração dos dados} - Resumo dos dados
-através de sua contagem e agrupamento: condensação e a tabulação de
-dados; soma e processamento dos dados obtidos mediante critérios de
-classificação. Pode ser manual, mecânica ou eletrônica (TOLEDO; OVALLE,
-2008).{]}
-
-.footer-note{[}.tiny{[}.green{[}Créditos:{]}{[}https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1{]}(){]}{]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Fases do método
-estatístico}\label{fases-do-muxe9todo-estatuxedstico-4}
-
-.content-box-army{[} \textbf{Apresentação dos dados} - Há duas formas de
-apresentação que não se excluem mutuamente (TOLEDO; OVALLE, 2008).{]}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\item
-  A apresentação tabular: é uma apresentação numérica dos dados em
-  linhas e colunas distribuídas de modo ordenado, segundo regras
-  práticas fixadas pelo Conselho Nacional de Estatística.
-\item
-  A apresentação gráfica dos dados numéricos constitui uma apresentação
-  geométrica permitindo uma visão rápida e clara do fenômeno.
-\end{enumerate}
-
-.content-box-army{[} \textbf{Análise e interpretação dos dados} - A
-última fase do trabalho estatístico é a mais importante e delicada.
-Portanto, está ligada essencialmente ao cálculo de medidas e
-coeficientes, cuja finalidade principal é descrever o fenômeno
-(Estatística descritiva).{]}
-
-.content-box-red{[}
-\protect\includegraphics[height=0.7em]{/tmp/RtmpaTnSKD/filee25b704d0c7b.pdf}
-\textbf{Hora de pensar um pouco} - A partir do que foi aprendido até o
-momento, apresente sua própria definição do que é Estatística.{]}
-
-.footer-note{[}.tiny{[}.green{[}Créditos:{]}{[}https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1{]}(){]}{]}
-
-\section{Princípios da Análise Exploratória de Dados
-(AED)}\label{princuxedpios-da-anuxe1lise-exploratuxf3ria-de-dados-aed}
-
-.small{[} .content-box-red{[} O objetivo da AED é entender melhor os
-dados e o processo pelo qual eles foram gerados.{]}
-
-Dentro da estatística, é uma etapa anterior aos estudos inferenciais
-(por exemplo, teste de hipóteses, estimativas pontuais e de intervalo,
-etc.), onde a AED tem um conjunto de objetivos muito diversificado e
-importante:
+A coleta pode ser classificada quanto à sua periodicidade:
 
 \begin{itemize}
 \tightlist
 \item
-  Forneça uma oportunidade para fazer uma limpeza de dados adicional.
+  \textbf{Contínua:} Registros constantes (nascimentos, óbitos).
 \item
-  Entenda como os dados são gerados e quais podem ser as relações entre
-  as variáveis.
+  \textbf{Periódica:} Intervalos constantes (Censos, avaliações
+  mensais).
 \item
-  Sugira perguntas e hipóteses que possam ser posteriormente respondidas
-  e testadas.
-\item
-  Identifique quais métodos estatísticos podem ser mais apropriados para
-  os dados para acompanhar essas questões e hipóteses.
+  \textbf{Ocasional:} Situações emergenciais ou específicas (surto de
+  dengue).
 \end{itemize}
 
-A AED foi criada, desenvolvida e defendida por
-\href{http://mnstats.morris.umn.edu/introstat/history/w98/Tukey.html}{\textbf{John
-Tukey}}. Seu livro, intitulado \emph{``Exploratory Data Analysis''} foi
-publicado em 1977 e ainda está em uso hoje. Pode parecer uma estranheza,
-mas foi uma mudança fundamental na forma como a ciência de
-dados/estatística era feita. Fundamentalmente, ele resume a AED com esta
-citação:
+\subsection{Natureza dos Dados}\label{natureza-dos-dados}
 
-.content-box-yellow{[} .red{[}\emph{``It is important to understand what
-you CAN DO, before you learn to measure how WELL you seem to have DONE
-it.'' -- J. W. Tukey (1977)``}{]}{]} {]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Princípios da Análise Exploratória de Dados
-(AED)}\label{princuxedpios-da-anuxe1lise-exploratuxf3ria-de-dados-aed-1}
-
-Se você não entender os dados, fica difícil saber como analisá-los. As
-análises confirmatória e exploratória não são superiores ou inferiores
-entre si, mas complementares. Com todas as ferramentas disponíveis para
-fazer as duas coisas, ignorar uma delas é um grande equivoco.
-
-.content-box-yellow{[} .red{[}\emph{``Today, exploratory and
-confirmatory (analysis) -- can -- and should -- proceed side by side.''
--- J. W. Tukey (1977)``}{]}{]}
-
-.content-box-purple{[} \textbf{Importante!}
-
-A utilização de programas estatísticos (por exemplo, \texttt{R}) não é
-componente desta disciplina. Portanto, não é objeto de avaliação. No
-entanto, serão apresentadas maneiras de realizar o que será ensinado
-durante o curso de maneira computacional. {]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Conceitos importantes}\label{conceitos-importantes}
-
-.content-box-blue{[} \textbf{População:}
-
-É um conjunto de indivíduo ou objetos que apresentam pelo menos uma
-característica em comum. A população pode ser finita ou infinita. Na
-prática, quanto a população é finita, com um número grande de elementos,
-considera-se como população infinita. {]}
-
-.content-box-blue{[} \textbf{Amostra:}
-
-Considerando-se a impossibilidade, na maioria das vezes, do tratamento
-de todos os elementos da população, retira-se uma amostra. Para os
-propósitos desse curso, admite-se que uma amostra já tenha sido
-escolhida de conformidade com alguma técnica de amostragem.
-
-{]}
-
-.content-box-blue{[} \textbf{Censo:}
-
-Estudo de uma população com base em todos os seus elementos. {]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Conceitos importantes}\label{conceitos-importantes-1}
-
-.content-box-blue{[} \textbf{Divisão da estatística:}
-
-Podemos dividir a estatística em duas partes: Estatística Descritiva e
-Estatística Inferencial. {]}
-
-.pull-left{[} .content-box-red{[} \textbf{Estatística Descritiva:}
-
-Constitui num conjunto de técnicas que objetivam descrever, analisar e
-interpretar os dados numéricos de uma população ou amostra. Os dados
-podem ser resumidos de forma numérica ou gráfica. {]} {]}
-
-.pull-right{[}
-
-.content-box-yellow{[} \textbf{Estatística Inferencial:}
-
-Estatísticas inferenciais usam uma amostra aleatória dos dados coletados
-de uma população para descrever e fazer inferências sobre a população.
-As estatísticas inferenciais são valiosas quando não é conveniente ou
-possível examinar cada membro de uma população inteira.
-
-{]} {]}
-
-.content-box-green{[} \textbf{Tabelas Estatísticas:}
-
-Uma tabela deve apresentar a seguinte estrutura: i) Cabeçalho, ii)
-Corpo; iii) rodapé. {]}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Conceitos importantes}\label{conceitos-importantes-2}
-
-Quando estamos estudando uma variável, nosso principal interesse é
-conhecer seu comportamento, analisando a ocorrência de suas possíveis
-realizações.
-
-\begin{verbatim}
-Warning in add_footnote(., "Fonte: Estatística Básica (Bussab e Morettin)"):
-Notation is set to 'number' and other formats are not supported.
-\end{verbatim}
-
-\begin{longtable}[t]{lrr}
-\caption{\label{tab:unnamed-chunk-1}Frequências e porcentagens dos 2000 empregrados da Companhia MB, segundo o grau de instrução.}\\
-\toprule
-Grau de Instrução & Frequência & Porcentagem (\%)\\
-\midrule
-Fundamental & 1650 & 32.5\\
-Médio & 1020 & 51.0\\
-Superior & 1330 & 16.5\\
-Total & 2000 & 100.0\\
-\bottomrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descrição
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fontes Comuns
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Primários} & Publicados pela própria pessoa/órgão que os
+recolheu. & Entrevistas, questionários. \\
+\textbf{Secundários} & Publicados por outra organização (já existentes).
+& IBGE, relatórios empresariais. \\
 \end{longtable}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\section{3. Análise Exploratória de Dados
+(AED)}\label{anuxe1lise-exploratuxf3ria-de-dados-aed}
 
-\section{Conceitos importantes}\label{conceitos-importantes-3}
+\begin{quote}
+\emph{``It is important to understand what you CAN DO, before you learn
+to measure how WELL you seem to have DONE it.''} \textgreater{} ---
+\textbf{John Tukey (1977)}
+\end{quote}
 
-.content-box-red{[} O cabeçalho deve conter o suficiente para que sejam
-respondidas as perguntas:
+A AED busca entender a estrutura dos dados antes da inferência. Seus
+objetivos incluem: * Limpeza de dados adicional. * Identificação de
+relações entre variáveis. * Sugestão de hipóteses para testes futuros.
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, colback=white, bottomrule=.15mm, bottomtitle=1mm, toptitle=1mm, opacitybacktitle=0.6, arc=.35mm, breakable, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Nota sobre Software}, toprule=.15mm, left=2mm, opacityback=0, coltitle=black]
+
+A utilização de programas como o \textbf{R} é uma ferramenta
+complementar. Embora o foco seja o conceito, demonstraremos como
+realizar as análises de forma computacional.
+
+\end{tcolorbox}
+
+\section{4. Conceitos Fundamentais}\label{conceitos-fundamentais}
 
 \begin{itemize}
 \tightlist
 \item
-  O que está representando?
+  \textbf{População:} Conjunto total de elementos com uma característica
+  comum.
 \item
-  Onde ocorreu?
+  \textbf{Amostra:} Subconjunto representativo da população.
 \item
-  Quando ocorreu? {]}
+  \textbf{Censo:} Estudo que abrange todos os elementos da população.
 \end{itemize}
 
-.content-box-yellow{[} O corpo da tabela é representado por colunas e
-subcolunas dentro dos quais serão registrados os dados numéricos e
-informações.{]}
+\subsection{Divisão da Estatística}\label{divisuxe3o-da-estatuxedstica}
 
-.content-box-green{[} O rodapé é reservado para observações pertinentes
-à tabela, bem como para o registro e identificação da fonte dos
-dados.{]}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Descritiva:} Técnicas para descrever e resumir dados (tabelas
+  e gráficos).
+\item
+  \textbf{Inferencial:} Uso de amostras para fazer generalizações sobre
+  a população.
+\end{enumerate}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\section{5. Tipos de Variáveis}\label{tipos-de-variuxe1veis}
 
-\section{Conceitos importantes}\label{conceitos-importantes-4}
+Uma \textbf{variável} é a característica de interesse que estudamos em
+uma população.
 
-\begin{verbatim}
-Warning in add_footnote(., "Fonte: Estatística Básica (Bussab e Morettin)", :
-Notation is set to 'number' and other formats are not supported.
-\end{verbatim}
+\begin{figure}
 
-\begin{longtable}[t]{lrr}
-\caption{\label{tab:unnamed-chunk-2}Frequências e porcentagens dos 2000 empregrados da Companhia MB, segundo o grau de instrução em 2024.}\\
-\toprule
-Grau de Instrução & Frequência & Porcentagem (\%)\\
-\midrule
-Fundamental & 1650 & 32.5\\
-Médio & 1020 & 51.0\\
-Superior & 1330 & 16.5\\
-Total & 2000 & 100.0\\
-\bottomrule
-\end{longtable}
+\begin{minipage}{0.50\linewidth}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Exercício}\label{exercuxedcio}
-
-Construir uma tabela com as informações sobre o tipo de escola
-frequentada durante o Ensino Médio pelos alunos da disciplina de
-Estatística Aplicada às Ciências Sociais do período 2025.1 da
-Universidade Federal do Ceará.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Tipos de variáveis}\label{tipos-de-variuxe1veis}
-
-.content-box-red{[}
-
-Uma \textbf{variável} é uma característica de interesse que associamos à
-população para ser estudada estatisticamente.
-
-\textbf{Exemplo:} Altura, estado civil e salários de entrevistados em
-uma pesquisa. {]}
-
-As variáveis pode ser de dois tipos:
-
-.pull-left{[} .content-box-blue{[} \textbf{Qualitativas}
-
-Apresentam como possíveis resultados uma qualidade (ou atributo) do
-elemento pesquisado.
+\subsubsection{Qualitativas (Atributos)}\label{qualitativas-atributos}
 
 \begin{itemize}
+\tightlist
 \item
-  .red{[}Qualitativa Norminal:{]} Não existe ordenação possível nas
-  realizações das categorias;
+  \textbf{Nominal:} Sem ordem (Ex: Cor dos olhos, sexo).
 \item
-  .red{[}Qualitativa Ordinal:{]} Existe ordem ou hierarquia entre as
-  realizações de cada variável. {]} {]}
+  \textbf{Ordinal:} Com hierarquia (Ex: Escolaridade, classe social).
 \end{itemize}
 
-.pull-right{[} .content-box-yellow{[} \textbf{Quantitativas:}
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
 
-São aquelas em que as possíveis realizações são valores numéricos.
+\subsubsection{Quantitativas (Números)}\label{quantitativas-nuxfameros}
 
 \begin{itemize}
+\tightlist
 \item
-  .red{[}Quantitativa Discreta:{]} são aquelas que resultam de contagem.
-  Só podem assumir valores inteiros.
+  \textbf{Discreta:} Contagem, valores inteiros (Ex: Nº de filhos).
 \item
-  .red{[}Quantitativa Contínua:{]} são aquelas que resultam de medição.
-  {]}{]}
+  \textbf{Contínua:} Medição, valores reais (Ex: Peso, altura).
 \end{itemize}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\end{minipage}%
 
-\section{Exercícios}\label{exercuxedcios}
+\end{figure}%
+
+\section{📝 Exercícios de Fixação}\label{exercuxedcios-de-fixauxe7uxe3o}
 
 Classifique as variáveis abaixo:
 
@@ -1154,17 +934,17 @@ Classifique as variáveis abaixo:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Cor dos olhos dos candidatos a modelos de uma agência.
+  Cor dos olhos de candidatos: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 \item
-  Número de filhos de casais residentes em uma cidade.
+  Número de filhos de casais: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 \item
-  Causas de acidentes de trabalho de funcionários de uma fábrica.
+  Salários de funcionários: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 \item
-  Salários de funcionários de uma empresa.
+  Classificação em concurso público:
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 \item
-  Renda de clientes de um banco.
-\item
-  Classificação em concurso público.
+  Renda de clientes de um banco:
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 \end{enumerate}
 
 \bookmarksetup{startatroot}
