@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:51
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1127,41 +1127,26 @@ File: Kolmo.png Graphic file (type bmp)
 <Kolmo.png>
 [8] [9]
 chapter 2.
-
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 772--773
-[]\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
- []
-
 [10
 
-]
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 801--802
+] [11]
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 849--850
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 815--820
-[]\TU/lmr/m/n/10.95 .blue[Coleta direta] - obtida diretamente da fonte. Levantamento de registros
- []
-
-[11]
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 848--849
-[]\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
- []
-
-
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 877--878
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 878--879
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
 [12]
 
-LaTeX Warning: File `/tmp/Rtmp80ihMn/filedf516e1dc328.pdf' not found on input line 905.
+LaTeX Warning: File `/tmp/RtmpaTnSKD/filee25b704d0c7b.pdf' not found on input line 906.
 
-! Unable to load picture or PDF file '/tmp/Rtmp80ihMn/filedf516e1dc328.pdf'.
+! Unable to load picture or PDF file '/tmp/RtmpaTnSKD/filee25b704d0c7b.pdf'.
 <to be read again> 
                    }
-l.905 ...em]{/tmp/Rtmp80ihMn/filedf516e1dc328.pdf}
+l.906 ...em]{/tmp/RtmpaTnSKD/filee25b704d0c7b.pdf}
                                                   
 The requested image couldn't be read because
 it was not a recognized image format.
@@ -1174,5 +1159,5 @@ Here is how much of TeX's memory you used:
  53042 multiletter control sequences out of 15000+600000
  632446 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,9n,114p,11208b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,9n,114p,11208b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 Output written on index.pdf (13 pages).

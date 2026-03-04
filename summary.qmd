@@ -9,6 +9,8 @@ Quando se faz uma pesquisa científica, o procedimento geral é formular hipóte
 #### Método Científico
 
 Conjunto de normas básicas que devem ser seguidas para a produção de conhecimentos que têm o rigor da ciência, ou seja, é um método usado para a pesquisa e comprovação de um determinado conteúdo. Destacamos o **método experimental** e o **método estatístico**.
+
+
 .pull-left[
 .content-box-yellow[
 
@@ -24,7 +26,7 @@ Conjunto de normas básicas que devem ser seguidas para a produção de conhecim
 ]
 ]
 
-.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]
 ---
 
 ## Fases do método estatístico
@@ -56,15 +58,16 @@ objetivo da pesquisa, as características da amostra, os métodos que serão uti
 ]
 ]
 
-.footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()]]
+![Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-1]()
 ---
 
 ## Fases do método estatístico
+
 .content-box-army[
-**Coleta de dados** - A coleta pode ser de dois tipos: .red[coleta direta] e .red[coleta indireta].
+**Coleta de dados** - A coleta pode ser de dois tipos: **coleta direta** e **coleta indireta**.
 ]
 
-1) .blue[Coleta direta] - obtida diretamente da fonte. Levantamento de registros (nascimentos, óbitos, notas fiscais, impostos, entre outros) ou coletados diretamente através de inquéritos, questionários etc. Esses dados são chamados de dados primários. Esta coleta pode ser classificada como:
+1) Coleta direta - obtida diretamente da fonte. Levantamento de registros (nascimentos, óbitos, notas fiscais, impostos, entre outros) ou coletados diretamente através de inquéritos, questionários etc. Esses dados são chamados de dados primários. Esta coleta pode ser classificada como:
 
 a) Coleta contínua: quando feita de forma contínua, como registros de nascimento, óbitos, casamentos, frequência de alunos às aulas, etc. (CRESPO, 2002).
 

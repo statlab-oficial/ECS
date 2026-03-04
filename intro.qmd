@@ -29,7 +29,7 @@ Estatística, muitos dos quais só foram completamente compreendidos mais tarde.
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Karl Pearson"
 
 knitr::include_graphics("pearson.png")
@@ -50,7 +50,7 @@ knitr::include_graphics("pearson.png")
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "William Sealey Gosset"
 
 knitr::include_graphics("gosset.png")
@@ -71,7 +71,7 @@ knitr::include_graphics("gosset.png")
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Ronald Aylmer Fisher"
 
 knitr::include_graphics("Fisher.png")
@@ -97,7 +97,7 @@ Fisher foi eleito membro da *Royal Society* em 1929 e condecorado com as medalha
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Jakob Bernoulli"
 
 knitr::include_graphics("Jakob.png")
@@ -119,7 +119,7 @@ knitr::include_graphics("Jakob.png")
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Abraham de Moivre"
 
 knitr::include_graphics("Moivre.png")
@@ -140,7 +140,7 @@ knitr::include_graphics("Moivre.png")
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Thomas Bayes"
 
 knitr::include_graphics("Bayes.png")
@@ -162,7 +162,7 @@ nenhum trabalho com seu nome, em 1742 **Thomas Bayes** foi eleito membro da *Roy
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Johann Carl Friedrich Gauss"
 
 knitr::include_graphics("Gauss.png")
@@ -186,7 +186,7 @@ edição com o título *“Physique sociale”* ou *“Essai sur le développeme
 #| echo: false
 #| message: false
 #| warning: false
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| fig-cap: "Andrey Nikolayevich Kolmogorov"
 
 knitr::include_graphics("Kolmo.png")
