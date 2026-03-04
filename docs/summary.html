@@ -224,9 +224,9 @@ window.Quarto = {
   <ul>
   <li><a href="#os-três-pilares-da-descrição" id="toc-os-três-pilares-da-descrição" class="nav-link active" data-scroll-target="#os-três-pilares-da-descrição"><span class="header-section-number">2.1</span> Os Três Pilares da Descrição</a>
   <ul class="collapse">
-  <li><a href="#tendência-central" id="toc-tendência-central" class="nav-link" data-scroll-target="#tendência-central"><span class="header-section-number">2.1.1</span> 1. Tendência Central</a></li>
-  <li><a href="#dispersão-ou-variabilidade" id="toc-dispersão-ou-variabilidade" class="nav-link" data-scroll-target="#dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> 2. Dispersão ou Variabilidade</a></li>
-  <li><a href="#forma-e-posição" id="toc-forma-e-posição" class="nav-link" data-scroll-target="#forma-e-posição"><span class="header-section-number">2.1.3</span> 3. Forma e Posição</a></li>
+  <li><a href="#tendência-central" id="toc-tendência-central" class="nav-link" data-scroll-target="#tendência-central"><span class="header-section-number">2.1.1</span> Tendência Central</a></li>
+  <li><a href="#dispersão-ou-variabilidade" id="toc-dispersão-ou-variabilidade" class="nav-link" data-scroll-target="#dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> Dispersão ou Variabilidade</a></li>
+  <li><a href="#forma-e-posição" id="toc-forma-e-posição" class="nav-link" data-scroll-target="#forma-e-posição"><span class="header-section-number">2.1.3</span> Forma e Posição</a></li>
   </ul></li>
   <li><a href="#o-fluxo-da-análise-descritiva" id="toc-o-fluxo-da-análise-descritiva" class="nav-link" data-scroll-target="#o-fluxo-da-análise-descritiva"><span class="header-section-number">2.2</span> O Fluxo da Análise Descritiva</a></li>
   <li><a href="#exemplo-prático-em-r" id="toc-exemplo-prático-em-r" class="nav-link" data-scroll-target="#exemplo-prático-em-r"><span class="header-section-number">2.3</span> Exemplo Prático em R</a></li>
@@ -266,26 +266,41 @@ O que ela responde?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Diferente da Inferencial, que busca “adivinhar” o todo a partir da parte, a Descritiva foca no <strong>aqui e agora</strong>: * Qual é o valor central? * Os dados estão muito espalhados? * Existem valores atípicos (<em>outliers</em>)?</p>
+<p>Diferente da Inferencial, que busca “adivinhar” o todo a partir da parte, a Descritiva foca no <strong>aqui e agora</strong>:</p>
+<ul>
+<li><p>Qual é o valor central?</p></li>
+<li><p>Os dados estão muito espalhados?</p></li>
+<li><p>Existem valores atípicos (<em>outliers</em>)?</p></li>
+</ul>
 </div>
 </div>
 <section id="os-três-pilares-da-descrição" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="os-três-pilares-da-descrição"><span class="header-section-number">2.1</span> Os Três Pilares da Descrição</h2>
-<p>Para descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:</p>
+<p>Para descrever um conjunto de dados de forma completa, geralmente exploramos três clases de medidas descritivas:</p>
 <section id="tendência-central" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="tendência-central"><span class="header-section-number">2.1.1</span> 1. Tendência Central</h3>
-<p>Buscam um único valor que represente o “centro” da distribuição. * <strong>Média (<span class="math inline">\(\mu\)</span> ou <span class="math inline">\(\bar{x}\)</span>):</strong> O ponto de equilíbrio matemático. * <strong>Mediana:</strong> O valor que divide os dados exatamente ao meio. * <strong>Moda:</strong> O valor que aparece com maior frequência.</p>
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="tendência-central"><span class="header-section-number">2.1.1</span> Tendência Central</h3>
+<p>Buscam um único valor que represente o “centro” da distribuição.</p>
+<ul>
+<li><p><strong>Média (<span class="math inline">\(\bar{x}\)</span>):</strong> O ponto de equilíbrio matemático.</p></li>
+<li><p><strong>Mediana:</strong> O valor que divide os dados exatamente ao meio.</p></li>
+<li><p><strong>Moda:</strong> O valor que aparece com maior frequência.</p></li>
+</ul>
 </section>
 <section id="dispersão-ou-variabilidade" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> 2. Dispersão ou Variabilidade</h3>
-<p>Indicam o quão “esticados” ou agrupados estão os dados em torno do centro. * <strong>Variância (<span class="math inline">\(\sigma^2\)</span>):</strong> A média dos quadrados dos desvios. * <strong>Desvio Padrão (<span class="math inline">\(\sigma\)</span>):</strong> A medida de dispersão na mesma unidade dos dados originais. * <strong>Amplitude:</strong> A distância entre o máximo e o mínimo.</p>
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="dispersão-ou-variabilidade"><span class="header-section-number">2.1.2</span> Dispersão ou Variabilidade</h3>
+<p>Indicam o quão “esticados” ou agrupados estão os dados em torno do centro.</p>
+<ul>
+<li><p><strong>Variância (<span class="math inline">\(\sigma^2\)</span>):</strong> A média dos quadrados dos desvios.</p></li>
+<li><p><strong>Desvio Padrão (<span class="math inline">\(\sigma\)</span>):</strong> A medida de dispersão na mesma unidade dos dados originais.</p></li>
+<li><p><strong>Amplitude:</strong> A distância entre o máximo e o mínimo.</p></li>
+</ul>
 </section>
 <section id="forma-e-posição" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="forma-e-posição"><span class="header-section-number">2.1.3</span> 3. Forma e Posição</h3>
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="forma-e-posição"><span class="header-section-number">2.1.3</span> Forma e Posição</h3>
 <ul>
-<li><strong>Assimetria (<em>Skewness</em>):</strong> Indica se os dados se concentram mais à esquerda ou à direita.</li>
-<li><strong>Curtose:</strong> Mede o “pico” ou achatamento da distribuição.</li>
-<li><strong>Quartis e Percentis:</strong> Dividem os dados em partes iguais (ex: os 25% mais ricos).</li>
+<li><p><strong>Assimetria (<em>Skewness</em>):</strong> Indica se os dados se concentram mais à esquerda ou à direita.</p></li>
+<li><p><strong>Curtose:</strong> Mede o “pico” ou achatamento da distribuição.</p></li>
+<li><p><strong>Quartis e Percentis:</strong> Dividem os dados em partes iguais (ex: os 25% mais ricos).</p></li>
 </ul>
 </section>
 </section>
@@ -293,12 +308,11 @@ O que ela responde?
 <h2 data-number="2.2" class="anchored" data-anchor-id="o-fluxo-da-análise-descritiva"><span class="header-section-number">2.2</span> O Fluxo da Análise Descritiva</h2>
 <p>A jornada do dado bruto até a informação segue este fluxo:</p>
 <ol type="1">
-<li><strong>Coleta e Crítica:</strong> Limpeza de erros e inconsistências.</li>
-<li><strong>Organização:</strong> Criação de tabelas de frequências.</li>
-<li><strong>Visualização:</strong> Gráficos (Histogramas, Boxplots, Dispersão).</li>
-<li><strong>Resumo Numérico:</strong> Cálculo das estatísticas (Média, Desvio Padrão, etc).</li>
+<li><p><strong>Coleta e Crítica:</strong> Limpeza de erros e inconsistências.</p></li>
+<li><p><strong>Organização:</strong> Criação de tabelas de frequências.</p></li>
+<li><p><strong>Visualização:</strong> Gráficos (Histogramas, Boxplots, Dispersão).</p></li>
+<li><p><strong>Resumo Numérico:</strong> Cálculo das estatísticas (Média, Desvio Padrão, etc).</p></li>
 </ol>
-<hr>
 </section>
 <section id="exemplo-prático-em-r" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="exemplo-prático-em-r"><span class="header-section-number">2.3</span> Exemplo Prático em R</h2>

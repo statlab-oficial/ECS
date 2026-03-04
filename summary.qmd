@@ -5,8 +5,11 @@ A **Estatística Descritiva** é a etapa inicial de qualquer análise quantitati
 ::: {.callout-note}
 ## O que ela responde?
 Diferente da Inferencial, que busca "adivinhar" o todo a partir da parte, a Descritiva foca no **aqui e agora**: 
+
 * Qual é o valor central? 
+
 * Os dados estão muito espalhados? 
+
 * Existem valores atípicos (*outliers*)?
 :::
 
@@ -14,23 +17,35 @@ Diferente da Inferencial, que busca "adivinhar" o todo a partir da parte, a Desc
 
 ## Os Três Pilares da Descrição
 
-Para descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:
+Para descrever um conjunto de dados de forma completa, geralmente exploramos três clases de medidas descritivas:
 
-### 1. Tendência Central
+### Tendência Central
+
 Buscam um único valor que represente o "centro" da distribuição.
-* **Média ($\mu$ ou $\bar{x}$):** O ponto de equilíbrio matemático.
+
+* **Média ($\bar{x}$):** O ponto de equilíbrio matemático.
+
 * **Mediana:** O valor que divide os dados exatamente ao meio.
+
 * **Moda:** O valor que aparece com maior frequência.
 
-### 2. Dispersão ou Variabilidade
+
+### Dispersão ou Variabilidade
+
 Indicam o quão "esticados" ou agrupados estão os dados em torno do centro.
+
 * **Variância ($\sigma^2$):** A média dos quadrados dos desvios.
+
 * **Desvio Padrão ($\sigma$):** A medida de dispersão na mesma unidade dos dados originais.
+
 * **Amplitude:** A distância entre o máximo e o mínimo.
 
-### 3. Forma e Posição
+### Forma e Posição
+
 * **Assimetria (*Skewness*):** Indica se os dados se concentram mais à esquerda ou à direita.
+
 * **Curtose:** Mede o "pico" ou achatamento da distribuição.
+
 * **Quartis e Percentis:** Dividem os dados em partes iguais (ex: os 25% mais ricos).
 
 
@@ -39,11 +54,14 @@ Indicam o quão "esticados" ou agrupados estão os dados em torno do centro.
 A jornada do dado bruto até a informação segue este fluxo:
 
 1.  **Coleta e Crítica:** Limpeza de erros e inconsistências.
+
 2.  **Organização:** Criação de tabelas de frequências.
+
 3.  **Visualização:** Gráficos (Histogramas, Boxplots, Dispersão).
+
 4.  **Resumo Numérico:** Cálculo das estatísticas (Média, Desvio Padrão, etc).
 
----
+
 
 ## Exemplo Prático em R
 

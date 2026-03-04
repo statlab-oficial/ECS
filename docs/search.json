@@ -124,7 +124,7 @@
     "href": "summary.html",
     "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
     "section": "",
-    "text": "2.1 Os Três Pilares da Descrição\nPara descrever um conjunto de dados de forma completa, geralmente exploramos três dimensões:",
+    "text": "2.1 Os Três Pilares da Descrição\nPara descrever um conjunto de dados de forma completa, geralmente exploramos três clases de medidas descritivas:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "summary.html#os-três-pilares-da-descrição",
     "title": "2  Estatística Descritiva: A Arte de Narrar Dados",
     "section": "",
-    "text": "2.1.1 1. Tendência Central\nBuscam um único valor que represente o “centro” da distribuição. * Média (\\(\\mu\\) ou \\(\\bar{x}\\)): O ponto de equilíbrio matemático. * Mediana: O valor que divide os dados exatamente ao meio. * Moda: O valor que aparece com maior frequência.\n\n\n2.1.2 2. Dispersão ou Variabilidade\nIndicam o quão “esticados” ou agrupados estão os dados em torno do centro. * Variância (\\(\\sigma^2\\)): A média dos quadrados dos desvios. * Desvio Padrão (\\(\\sigma\\)): A medida de dispersão na mesma unidade dos dados originais. * Amplitude: A distância entre o máximo e o mínimo.\n\n\n2.1.3 3. Forma e Posição\n\nAssimetria (Skewness): Indica se os dados se concentram mais à esquerda ou à direita.\nCurtose: Mede o “pico” ou achatamento da distribuição.\nQuartis e Percentis: Dividem os dados em partes iguais (ex: os 25% mais ricos).",
+    "text": "2.1.1 Tendência Central\nBuscam um único valor que represente o “centro” da distribuição.\n\nMédia (\\(\\bar{x}\\)): O ponto de equilíbrio matemático.\nMediana: O valor que divide os dados exatamente ao meio.\nModa: O valor que aparece com maior frequência.\n\n\n\n2.1.2 Dispersão ou Variabilidade\nIndicam o quão “esticados” ou agrupados estão os dados em torno do centro.\n\nVariância (\\(\\sigma^2\\)): A média dos quadrados dos desvios.\nDesvio Padrão (\\(\\sigma\\)): A medida de dispersão na mesma unidade dos dados originais.\nAmplitude: A distância entre o máximo e o mínimo.\n\n\n\n2.1.3 Forma e Posição\n\nAssimetria (Skewness): Indica se os dados se concentram mais à esquerda ou à direita.\nCurtose: Mede o “pico” ou achatamento da distribuição.\nQuartis e Percentis: Dividem os dados em partes iguais (ex: os 25% mais ricos).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estatística Descritiva: A Arte de Narrar Dados</span>"
     ]
