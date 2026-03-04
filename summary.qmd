@@ -4,6 +4,7 @@ A **Estatística Descritiva** é a etapa inicial de qualquer análise quantitati
 
 ::: {.callout-note}
 ## O que ela responde?
+
 Diferente da Inferencial, que busca "adivinhar" o todo a partir da parte, a Descritiva foca no **aqui e agora**: 
 
 - Qual é o valor central? 
@@ -84,7 +85,7 @@ ggplot(data, aes(x = valores)) +
 
 
 ::: {.callout-tip}
-Por onde começar?
+## Por onde começar?
 
 Primeiro é necessário indentificar qual o tipo de variável que está sendo estudada. Depois disso, usar gráficos ou métodos adequados.
 :::
