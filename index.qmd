@@ -27,10 +27,10 @@ Reafirmamos que o uso responsável de tecnologias emergentes deve sempre preserv
 
 Este livro resulta da experiência acumulada no ensino, na orientação de estudantes e no desenvolvimento de pesquisas em modelos de regressão. Somos docentes pesquisadores do Departamento de Estatística e Matemática Aplicada da Universidade Federal do Ceará (DEMA/UFC), com atuação contínua em regressão linear, modelagem estatística e inferência. Integramos o Laboratório de Inovação em Estatística — StatLab/UFC (<https://statlab.quarto.pub/>) e o Grupo de Pesquisa *Modelos de Sobrevivência e Aplicações* do CNPq (<http://dgp.cnpq.br/dgp/espelhogrupo/9639095385610769>), espaços nos quais articulamos ensino, pesquisa e aplicação a problemas reais.
 
-O material tem como base as disciplinas Inferência Estatística I (CC0288) e Análise Inferencial (CC0448). Ao longo dos anos, consolidamos a convicção de que ensinar regressão exige equilíbrio entre rigor teórico e clareza interpretativa.
+O material tem como base as disciplinas Fundamentos de Estatística e Estatística Aplicadas às Ciências Sociais. Ao longo dos anos, consolidamos a convicção de que ensinar regressão exige equilíbrio entre rigor teórico e clareza interpretativa.
 
 O livro desenvolve os conceitos de introdutórios de Estatística de forma progressiva, enfatizando interpretação e propriedades. A implementação é realizada integralmente no **R**, utilizado como ambiente de experimentação conceitual e não apenas como ferramenta computacional.
 
-Os fundamentos matemáticos mais densos são apresentados em apêndices específicos, preservando o fluxo didático do texto principal e permitindo diferentes níveis de aprofundamento. Acreditamos que inferência deve ser ensinada como base para tomada de decisão, com atenção às suas suposições, limitações e implicações práticas.
+Os fundamentos matemáticos mais densos são apresentados em apêndices específicos, preservando o fluxo didático do texto principal e permitindo diferentes níveis de aprofundamento. Acreditamos que os conceitos iniciais de Estatística devam ser ensinados com atenção às suas suposições, limitações e implicações práticas.
 
 Esperamos que este livro contribua para a formação de profissionais capazes tomar decisões com rigor técnico, pensamento estatístico crítico e responsabilidade analítica.

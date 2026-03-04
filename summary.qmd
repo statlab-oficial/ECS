@@ -6,11 +6,12 @@ A **Estatística Descritiva** é a etapa inicial de qualquer análise quantitati
 ## O que ela responde?
 Diferente da Inferencial, que busca "adivinhar" o todo a partir da parte, a Descritiva foca no **aqui e agora**: 
 
-* Qual é o valor central? 
+- Qual é o valor central? 
 
-* Os dados estão muito espalhados? 
+- Os dados estão muito espalhados? 
 
-* Existem valores atípicos (*outliers*)?
+- Existem valores atípicos (*outliers*)?
+
 :::
 
 
@@ -23,7 +24,7 @@ Para descrever um conjunto de dados de forma completa, geralmente exploramos tr�
 
 Buscam um único valor que represente o "centro" da distribuição.
 
-* **Média ($\bar{x}$):** O ponto de equilíbrio matemático.
+* **Média ($\bar{x}$):** O ponto de equilíbrio dos dados.
 
 * **Mediana:** O valor que divide os dados exatamente ao meio.
 
@@ -75,7 +76,7 @@ library(ggplot2)
 data <- data.frame(valores = rnorm(200, mean = 50, sd = 10))
 
 ggplot(data, aes(x = valores)) +
-  geom_histogram(aes(y = ..density..), binwidth = 5, fill = "#69b3a2", color = "white") +
+  geom_histogram(aes(y = after_stat(density)), binwidth = 5, fill = "#69b3a2", color = "white") +
   geom_density(alpha = .2, fill = "#404080") +
   theme_minimal() +
   labs(title = "Distribuição de Frequências", x = "Valor", y = "Densidade")
