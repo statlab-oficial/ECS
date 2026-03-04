@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,12 +1142,12 @@ Overfull \hbox (47.35858pt too wide) in paragraph at lines 757--758
 
 [10]
 
-LaTeX Warning: File `/tmp/RtmpX8I08f/filed17e33d456c.pdf' not found on input line 785.
+LaTeX Warning: File `/tmp/RtmpiCIubD/filed6641992fa6d.pdf' not found on input line 785.
 
-! Unable to load picture or PDF file '/tmp/RtmpX8I08f/filed17e33d456c.pdf'.
+! Unable to load picture or PDF file '/tmp/RtmpiCIubD/filed6641992fa6d.pdf'.
 <to be read again> 
                    }
-l.785 ...7em]{/tmp/RtmpX8I08f/filed17e33d456c.pdf}
+l.785 ...em]{/tmp/RtmpiCIubD/filed6641992fa6d.pdf}
                                                   
 The requested image couldn't be read because
 it was not a recognized image format.
@@ -1155,7 +1155,7 @@ it was not a recognized image format.
  
 Here is how much of TeX's memory you used:
  24705 strings out of 470190
- 474413 string characters out of 5478671
+ 474462 string characters out of 5478671
  1190327 words of memory out of 5000000
  52994 multiletter control sequences out of 15000+600000
  632446 words of font info for 73 fonts, out of 8000000 for 9000
