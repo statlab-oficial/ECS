@@ -63,7 +63,7 @@ knitr::include_graphics("Gauss.png")
 
 :::
 
-::: {.column width="25%"}
+::: {.column width="75%"}
 Os estudos dos astrônomos Pierre-Simon Laplace (1749-1827), [Johann Carl Friedrich Gauss](https://www.britannica.com/biography/Carl-Friedrich-Gauss) (1777-1855) e *Lambert Adolphe Jacques Quetelet* (1796-1874) foram fundamentais para o desenvolvimento do Cálculo de Probabilidades. Devido aos novos métodos e idéias, o trabalho de *Laplace* de 1812, intitulado *“Théorie Analytique des Probabilités”*, até o presente é considerado um dos mais importantes trabalhos sobre a matéria. **Johann Carl Friedrich Gauss**, professor de astronomia e diretor do Observatório de Gottingen, em 1809 apresentou o estudo intitulado *“Theoria combinationis Observatorium Erroribus Minimis Obnoxia”*, explanando uma teoria sobre a análise de observações aplicável a qualquer ramo da ciência, alargando o campo de aplicação do Cálculo de Probabilidades. Com *Lambert Adolphe Jacques Quetelet*, por sua vez, inicia-se a aplicação aos fenômenos sociais. O seu escrito *“Sur l'homme et le développement de ses facultes”* foi publicado em segunda
 edição com o título *“Physique sociale”* ou *“Essai sur le développement des facultés de l'homme”*, que incluía pormenorizada análise da teoria da probabilidade.
 *Quetelet* introduziu também o conceito de “homem médio” e chamou particular atenção para a notável consistência dos fenômenos sociais. Por exemplo, mostrou que fatores como a criminalidade apresentam permanências em relação a diferentes países e classes sociais.
