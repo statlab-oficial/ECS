@@ -1,9 +1,4 @@
----
-title: "Estatística Descritiva"
-subtitle: "Fases do Método e Conceitos Iniciais"
-format: html
-editor: visual
----
+# Estatística Descritiva
 
 ## 1. Fases do Método Estatístico
 
@@ -16,19 +11,19 @@ Conjunto de normas básicas para a produção de conhecimento com rigor científ
 ::: {layout-nw="[[1,1]]"}
 ::: {.callout-note icon=false}
 **Método Experimental**
-Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química. *(CRESPO, 2002)*
+Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química [@crespo2002]. 
 :::
 
 ::: {.callout-note icon=false}
 **Método Estatístico**
-Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma. *(COSTA, 2011)*
+Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma [@costa2011]. 
 :::
 :::
 
 
 
 ### As Fases do Método Estatístico
-Segundo Castanheira (2003), o método divide-se em seis etapas lógicas:
+Segundo @castanheira2003, o método divide-se em seis etapas lógicas:
 
 1. **Definição do Problema:** Saber exatamente o que se pretende pesquisar.
 2. **Planejamento:** Determinar objetivos, amostra e cronograma.
@@ -60,7 +55,7 @@ A coleta pode ser classificada quanto à sua periodicidade:
 
 ## 3. Análise Exploratória de Dados (AED)
 
-> *"It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it."* > — **John Tukey (1977)**
+> *"It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it."* > — @tukey1977
 
 A AED busca entender a estrutura dos dados antes da inferência. Seus objetivos incluem:
 * Limpeza de dados adicional.

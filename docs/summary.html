@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -185,7 +205,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estatística Descritiva</span></h1>
-<p class="subtitle lead">Fases do Método e Conceitos Iniciais</p>
 </div>
 
 
@@ -221,7 +240,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Método Experimental</strong> Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química. <em>(CRESPO, 2002)</em></p>
+<p><strong>Método Experimental</strong> Consiste em manter constantes todas as causas (fatores), menos uma, e variá-la para descobrir seus efeitos. Comum na Física e Química <span class="citation" data-cites="crespo2002">(<a href="references.html#ref-crespo2002" role="doc-biblioref">Crespo, 2002</a>)</span>.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -234,7 +253,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Método Estatístico</strong> Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma. <em>(COSTA, 2011)</em></p>
+<p><strong>Método Estatístico</strong> Admite todas as causas presentes variando-as, registrando essas variações para determinar a influência de cada uma <span class="citation" data-cites="costa2011">(<a href="references.html#ref-costa2011" role="doc-biblioref">Costa, 2011</a>)</span>.</p>
 </div>
 </div>
 </div>
@@ -242,7 +261,7 @@ Note
 </section>
 <section id="as-fases-do-método-estatístico" class="level3" data-number="2.1.2">
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="as-fases-do-método-estatístico"><span class="header-section-number">2.1.2</span> As Fases do Método Estatístico</h3>
-<p>Segundo Castanheira (2003), o método divide-se em seis etapas lógicas:</p>
+<p>Segundo <span class="citation" data-cites="castanheira2003">Castanheira (<a href="references.html#ref-castanheira2003" role="doc-biblioref">2003</a>)</span>, o método divide-se em seis etapas lógicas:</p>
 <ol type="1">
 <li><strong>Definição do Problema:</strong> Saber exatamente o que se pretende pesquisar.</li>
 <li><strong>Planejamento:</strong> Determinar objetivos, amostra e cronograma.</li>
@@ -297,7 +316,7 @@ Note
 <section id="análise-exploratória-de-dados-aed" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="análise-exploratória-de-dados-aed"><span class="header-section-number">2.3</span> 3. Análise Exploratória de Dados (AED)</h2>
 <blockquote class="blockquote">
-<p><em>“It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it.”</em> &gt; — <strong>John Tukey (1977)</strong></p>
+<p><em>“It is important to understand what you CAN DO, before you learn to measure how WELL you seem to have DONE it.”</em> &gt; — <span class="citation" data-cites="tukey1977">Tukey (<a href="references.html#ref-tukey1977" role="doc-biblioref">1977</a>)</span></p>
 </blockquote>
 <p>A AED busca entender a estrutura dos dados antes da inferência. Seus objetivos incluem: * Limpeza de dados adicional. * Identificação de relações entre variáveis. * Sugestão de hipóteses para testes futuros.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -366,6 +385,20 @@ Nota sobre Software
 </ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-castanheira2003" class="csl-entry" role="listitem">
+CASTANHEIRA, Nelson Pereira. <strong>Estatística aplicada a todos os níveis</strong>. Curitiba: IBPEX, 2003.
+</div>
+<div id="ref-costa2011" class="csl-entry" role="listitem">
+COSTA, Giovani Glaucio de Oliveira. <strong>Curso de estatística básica</strong>. São Paulo: Atlas, 2011.
+</div>
+<div id="ref-crespo2002" class="csl-entry" role="listitem">
+CRESPO, Antônio Arnot. <strong>Estatística fácil</strong>. 18. ed. São Paulo: Saraiva, 2002.
+</div>
+<div id="ref-tukey1977" class="csl-entry" role="listitem">
+TUKEY, John Wilder. <strong>Exploratory data analysis</strong>. Reading, Mass.: Addison-Wesley, 1977.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
