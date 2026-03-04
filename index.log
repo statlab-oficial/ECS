@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.23)  4 MAR 2026 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,69 +1096,83 @@ chapter 1.
 [4
 
 ]
-Underfull \hbox (badness 1112) in paragraph at lines 464--474
+File: pearson.png Graphic file (type bmp)
+<pearson.png>
+File: gosset.png Graphic file (type bmp)
+<gosset.png>
+[5]
+File: Fisher.png Graphic file (type bmp)
+<Fisher.png>
+
+Underfull \hbox (badness 1112) in paragraph at lines 524--534
 \TU/lmr/m/n/10.95 Agronômica de Rothamsted, contribuindo enormemente tanto para o desenvolvimento
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 464--474
+Underfull \hbox (badness 1038) in paragraph at lines 524--534
 \TU/lmr/m/n/10.95 Experimentos, introduzindo os conceitos de Aleatorização e da Análise da Variância,
  []
 
-[5]
+File: Jakob.png Graphic file (type bmp)
+<Jakob.png>
+[6]
+File: Moivre.png Graphic file (type bmp)
+<Moivre.png>
+File: Bayes.png Graphic file (type bmp)
+<Bayes.png>
+[7]
 File: Gauss.png Graphic file (type bmp)
 <Gauss.png>
-[6]
 File: Kolmo.png Graphic file (type bmp)
 <Kolmo.png>
-[7]
+[8] [9]
 chapter 2.
 
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 652--653
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 772--773
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
-[8
+[10
 
 ]
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 681--682
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 801--802
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 695--700
+Underfull \hbox (badness 1466) in paragraph at lines 815--820
 []\TU/lmr/m/n/10.95 .blue[Coleta direta] - obtida diretamente da fonte. Levantamento de registros
  []
 
-[9]
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 728--729
+[11]
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 848--849
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
 
-Overfull \hbox (47.35858pt too wide) in paragraph at lines 757--758
+Overfull \hbox (47.35858pt too wide) in paragraph at lines 877--878
 []\TU/lmr/m/n/10.95 .footer-note[.tiny[.green[Créditos:][https://editora.uespi.br/index.php/editora/catalog/view/58/53/317-
  []
 
-[10]
+[12]
 
-LaTeX Warning: File `/tmp/RtmpIPS7rf/filedc1cb780609.pdf' not found on input line 785.
+LaTeX Warning: File `/tmp/Rtmp80ihMn/filedf516e1dc328.pdf' not found on input line 905.
 
-! Unable to load picture or PDF file '/tmp/RtmpIPS7rf/filedc1cb780609.pdf'.
+! Unable to load picture or PDF file '/tmp/Rtmp80ihMn/filedf516e1dc328.pdf'.
 <to be read again> 
                    }
-l.785 ...7em]{/tmp/RtmpIPS7rf/filedc1cb780609.pdf}
+l.905 ...em]{/tmp/Rtmp80ihMn/filedf516e1dc328.pdf}
                                                   
 The requested image couldn't be read because
 it was not a recognized image format.
 
  
 Here is how much of TeX's memory you used:
- 24705 strings out of 470190
- 474413 string characters out of 5478671
- 1190327 words of memory out of 5000000
- 52994 multiletter control sequences out of 15000+600000
+ 24759 strings out of 470190
+ 475281 string characters out of 5478671
+ 1186327 words of memory out of 5000000
+ 53042 multiletter control sequences out of 15000+600000
  632446 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,9n,114p,11208b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on index.pdf (11 pages).
+ 108i,9n,114p,11208b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on index.pdf (13 pages).
